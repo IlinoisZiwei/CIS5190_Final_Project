@@ -1,0 +1,75 @@
+{
+  "status": "complete",
+  "stage": "E6",
+  "torch": "2.9.1",
+  "fixture": "8000 repeated approved training URL paths; no held-out or teacher data",
+  "accuracy_computed": false,
+  "cold_load_each_repeat": true,
+  "process_import_time_included": false,
+  "teacher_limit_wall_seconds": 420,
+  "local_target_wall_seconds": 210,
+  "all_runs_below_target": true,
+  "server_hardware_equivalence": "unknown; local timing is not a server guarantee",
+  "runs": [
+    {
+      "threads": 1,
+      "repeat": 1,
+      "rows": 8000,
+      "preprocess_wall_seconds": 0.04571658297209069,
+      "load_wall_seconds": 0.21758766705170274,
+      "inference_wall_seconds": 18.367626124992967,
+      "total_wall_seconds": 18.630972374987323,
+      "cpu_seconds": 18.572567000000003
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "rows": 8000,
+      "preprocess_wall_seconds": 0.04554420802742243,
+      "load_wall_seconds": 0.22982999996747822,
+      "inference_wall_seconds": 18.29026766604511,
+      "total_wall_seconds": 18.565673917008098,
+      "cpu_seconds": 18.477801
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "rows": 8000,
+      "preprocess_wall_seconds": 0.046178749995306134,
+      "load_wall_seconds": 0.24982833303511143,
+      "inference_wall_seconds": 17.987556124979164,
+      "total_wall_seconds": 18.283588374964893,
+      "cpu_seconds": 18.163689999999995
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "rows": 8000,
+      "preprocess_wall_seconds": 0.047487500007264316,
+      "load_wall_seconds": 0.2364452090114355,
+      "inference_wall_seconds": 13.192476207972504,
+      "total_wall_seconds": 13.476439542020671,
+      "cpu_seconds": 23.146289000000003
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "rows": 8000,
+      "preprocess_wall_seconds": 0.050527416984550655,
+      "load_wall_seconds": 0.2591612500254996,
+      "inference_wall_seconds": 13.198958209017292,
+      "total_wall_seconds": 13.508681499981321,
+      "cpu_seconds": 23.244326
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "rows": 8000,
+      "preprocess_wall_seconds": 0.05298425001092255,
+      "load_wall_seconds": 0.2871614579926245,
+      "inference_wall_seconds": 13.228694792021997,
+      "total_wall_seconds": 13.568878832971677,
+      "cpu_seconds": 23.36882
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "budget_seconds": 300,
+  "total_measured_cpu_seconds": 298.88928000000004,
+  "stages": [
+    {
+      "name": "finalize",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/v3_feature_regularization_2026-10-29/finalize.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 0.330169,
+      "system_cpu_seconds": 0.24317899999999998,
+      "total_cpu_seconds": 0.573348,
+      "wall_seconds": 1.2765437079942785
+    },
+    {
+      "name": "finish",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/v3_feature_regularization_2026-10-29/finish_within_budget.py"
+      ],
+      "exit_code": -24,
+      "user_cpu_seconds": 19.289686,
+      "system_cpu_seconds": 1.859554,
+      "total_cpu_seconds": 21.14924,
+      "wall_seconds": 24.57956929100328
+    },
+    {
+      "name": "preflight",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/v3_feature_regularization_2026-10-29/preflight.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 0.347671,
+      "system_cpu_seconds": 0.23801499999999998,
+      "total_cpu_seconds": 0.5856859999999999,
+      "wall_seconds": 0.8214906250068452
+    },
+    {
+      "name": "report",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/v3_feature_regularization_2026-10-29/report.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 0.14501799999999998,
+      "system_cpu_seconds": 0.068228,
+      "total_cpu_seconds": 0.213246,
+      "wall_seconds": 0.32247320900205523
+    },
+    {
+      "name": "study",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/v3_feature_regularization_2026-10-29/study.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 265.887217,
+      "system_cpu_seconds": 10.480543,
+      "total_cpu_seconds": 276.36776000000003,
+      "wall_seconds": 291.5583342080063
+    }
+  ],
+  "accounting": "Sum of all measured child user+system CPU, including budget-limited finish and report/finalizer. Excludes assistant reasoning, code editing and file delivery.",
+  "final_test_accessed": false,
+  "total_measured_wall_seconds": 318.55841104101273
+}

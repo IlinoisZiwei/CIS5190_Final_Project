@@ -1,0 +1,28 @@
+{
+  "score_scale": 0.776760627876633,
+  "models": {
+    "tuned_course": {
+      "rep": "A",
+      "C": 0.25,
+      "threshold": -0.15
+    },
+    "augmented": {
+      "rep": "C",
+      "C": 1.0,
+      "threshold": -0.2
+    }
+  },
+  "threshold_rule": "normalized_margin > threshold",
+  "class_order": [
+    "FoxNews",
+    "NBC"
+  ],
+  "development_used_for_selection": false,
+  "new_loss_mass": 200.0,
+  "course_loss_mass": 3730.0,
+  "feature_fit_rows": {
+    "A": "course only",
+    "C": "course vocabulary; course+new IDF"
+  },
+  "legacy_and_paired_training_pools_used_for_fitting": false
+}

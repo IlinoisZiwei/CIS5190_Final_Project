@@ -1,0 +1,72 @@
+[
+  {
+    "id": "E0",
+    "status": "complete",
+    "what": "Audit approved inputs; reproduce original validated V4",
+    "why": "Establish input contracts and a trustworthy fallback",
+    "result": "course_dev: 810/951; legacy_dev: 142/306; paired_dev: 115/200; audited training-origin rows=8096",
+    "做了什么": "审计获准输入，并复核原 V4 validated",
+    "为什么": "确认数据边界和保底模型的可复现性",
+    "结果": "course_dev: 810/951; legacy_dev: 142/306; paired_dev: 115/200；审计训练来源记录 8096 条"
+  },
+  {
+    "id": "E1",
+    "status": "complete",
+    "what": "Complete the missing nested fold without changing the locked protocol",
+    "why": "Estimate the selection procedure using all three complete partitions",
+    "result": "Nested 9/9 folds; internal gate=True. course -0.223 pp [-0.810, +0.383]; new +4.000 pp [+2.774, +5.198]; old +0.409 pp [-0.492, +1.334]",
+    "做了什么": "按冻结协议补缺失嵌套折",
+    "为什么": "用三套完整划分评估选择流程",
+    "结果": "Nested 9/9 folds; internal gate=True. course -0.223 pp [-0.810, +0.383]; new +4.000 pp [+2.774, +5.198]; old +0.409 pp [-0.492, +1.334]"
+  },
+  {
+    "id": "E2",
+    "status": "complete",
+    "what": "Fit/export locked A and C once, then confirm on three development panels",
+    "why": "Measure transfer after internal selection without dev retuning",
+    "result": "course_dev: A 776/951, C 764/951; external_dev: A 122/306, C 125/306; paired_dev: A 112/200, C 120/200; development gate=False; fits=2",
+    "做了什么": "锁定 A/C 各拟合与导出一次，在三个开发面板确认",
+    "为什么": "检验内部收益是否迁移，且不按开发结果再调参",
+    "结果": "course_dev: A 776/951, C 764/951; external_dev: A 122/306, C 125/306; paired_dev: A 112/200, C 120/200; development gate=False; fits=2"
+  },
+  {
+    "id": "E3",
+    "status": "complete",
+    "what": "Summarize paired errors, length slices, intervals, and controlled comparisons",
+    "why": "Explain where changes occur and quantify conditional uncertainty",
+    "result": "course_dev: fixed 22, new errors 34, persistent 153; net -12; external_dev: fixed 11, new errors 8, persistent 173; net +3; paired_dev: fixed 11, new errors 3, persistent 77; net +8",
+    "做了什么": "汇总错误变化、长度切片、区间与受控对照",
+    "为什么": "说明改进或退步发生在哪里，并量化条件不确定性",
+    "结果": "course_dev: fixed 22, new errors 34, persistent 153; net -12; external_dev: fixed 11, new errors 8, persistent 173; net +3; paired_dev: fixed 11, new errors 3, persistent 77; net +8"
+  },
+  {
+    "id": "E4",
+    "status": "not_started_gate_failed",
+    "what": "Conditionally migrate the fixed lexical adaptation to V4",
+    "why": "Require internal and development protection gates before spending the conditional budget",
+    "result": "The conditionally authorized V4 migration was not started because the frozen E1/E2 prerequisite gates failed: G5_course_accuracy, G5_course_NBC_recall Course 776→764/951; NBC 387→382/475; allowed extra errors/misses 4/4. Model fits=0.",
+    "做了什么": "有条件地把固定词法适配迁移到 V4",
+    "为什么": "先通过内部与开发保护门槛，再使用条件预算",
+    "结果": "E4 已有条件授权；前置门槛失败，未启动训练：G5_course_accuracy, G5_course_NBC_recall。Course 776→764/951; NBC 387→382/475; allowed extra errors/misses 4/4. 模型拟合次数为 0。"
+  },
+  {
+    "id": "E5",
+    "status": "complete",
+    "what": "Freeze the final model and its provenance",
+    "why": "Keep validated scoring separate from the full-data submission artifact",
+    "result": "Decision=retain_original_v4_submission; fitting rows=4800; new training=False; original models overwritten=False. The 810/951 score belongs to the validated sibling, not the submission fitted on all 4,800 rows.",
+    "做了什么": "冻结最终模型及其来源",
+    "为什么": "分开开发评估模型和全数据提交模型",
+    "结果": "决策=retain_original_v4_submission；拟合行数=4800；新增训练=False；覆盖原模型=False。810/951 属于 validated 模型，不是拟合全部 4800 行的提交模型的独立开发成绩。"
+  },
+  {
+    "id": "E6",
+    "status": "complete",
+    "what": "Verify deployment interfaces and CPU runtime",
+    "why": "Check the course inference contract on approved/synthetic inputs",
+    "result": "1 threads, 3 repeats: 18.28–18.63s wall; 4 threads, 3 repeats: 13.48–13.57s wall; PyTorch 2.9.1; target passed=True. Approved 8,000-row fixture only; server hardware equivalence is unknown.",
+    "做了什么": "验证部署接口与 CPU 耗时",
+    "为什么": "在获准或合成输入上检查课程推理要求",
+    "结果": "1 threads, 3 repeats: 18.28–18.63s wall; 4 threads, 3 repeats: 13.48–13.57s wall；PyTorch 2.9.1；通过本地目标=True。仅使用获准的 8000 行计时样例，服务器硬件等价性未知。"
+  }
+]

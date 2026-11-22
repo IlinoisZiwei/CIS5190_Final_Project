@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "stage": "E3",
+  "new_model_fits": 0,
+  "new_model_predictions": 0,
+  "error_transitions": {
+    "course_dev": {
+      "corrected_errors": 22,
+      "new_errors": 34,
+      "persistent_errors": 153,
+      "both_correct": 742,
+      "n": 951,
+      "net_correct_gain": -12
+    },
+    "external_dev": {
+      "corrected_errors": 11,
+      "new_errors": 8,
+      "persistent_errors": 173,
+      "both_correct": 114,
+      "n": 306,
+      "net_correct_gain": 3
+    },
+    "paired_dev": {
+      "corrected_errors": 11,
+      "new_errors": 3,
+      "persistent_errors": 77,
+      "both_correct": 109,
+      "n": 200,
+      "net_correct_gain": 8
+    }
+  },
+  "development_paired_intervals": {
+    "course_dev": {
+      "n": 951,
+      "groups": 934,
+      "delta_accuracy": -0.012618296529968454,
+      "ci95": [
+        -0.028332328471787457,
+        0.0031645569620253164
+      ],
+      "draws": 5000,
+      "seed": 5190,
+      "group_assumption": "Normalized cleaned-text groups only; broader event dependence is unknown.",
+      "scope": "Conditional descriptive interval on reused development; no multiple-comparison adjustment."
+    },
+    "external_dev": {
+      "n": 306,
+      "groups": 306,
+      "delta_accuracy": 0.00980392156862745,
+      "ci95": [
+        -0.016339869281045753,
+        0.0392156862745098
+      ],
+      "draws": 5000,
+      "seed": 5190,
+      "group_assumption": "Normalized cleaned-text groups only; historical event dependence is unknown.",
+      "scope": "Conditional descriptive interval on reused development; no multiple-comparison adjustment."
+    },
+    "paired_dev": {
+      "n": 200,
+      "groups": 100,
+      "delta_accuracy": 0.04,
+      "ci95": [
+        0.005,
+        0.075
+      ],
+      "draws": 5000,
+      "seed": 5190,
+      "group_assumption": "Saved paired event_group identifiers; both publishers in an event are resampled together.",
+      "scope": "Conditional descriptive interval on reused development; no multiple-comparison adjustment."
+    }
+  },
+  "master_records": 113,
+  "figure_count": 6,
+  "final_test_accessed": false,
+  "manual_error_cause_review": "not performed",
+  "saved_predictions_match_aggregate_correct_counts": true,
+  "limitations": [
+    "Development panels have already been reused; these are descriptive confirmations.",
+    "Group bootstrap is conditional on available groups and saved predictions.",
+    "Course/legacy event dependencies beyond normalized text are unknown.",
+    "Length slices and secondary comparisons are not multiplicity adjusted.",
+    "Original V4 and locked V3 candidates differ in architecture and training data.",
+    "No hidden-test or new leaderboard result is available."
+  ],
+  "cpu_seconds": 0.844679,
+  "wall_seconds": 1.3315620410139672
+}

@@ -1,0 +1,77 @@
+{
+  "stages": [
+    {
+      "name": "audit",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/new_data_v3_2026-10-29/audit.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 0.837888,
+      "system_cpu_seconds": 0.238069,
+      "total_cpu_seconds": 1.075957,
+      "wall_seconds": 2.066856124991318
+    },
+    {
+      "name": "evaluator",
+      "command": [
+        "/path/to/CIS5190",
+        "/path/to/local/Desktop/2026 Fall/CIS 5190/Final Project/eval_project_b.py",
+        "--model",
+        "DragonThree_quality_pipeline/experiments/new_data_v3_2026-10-29/models/all_2000/model.py",
+        "--preprocess",
+        "DragonThree_quality_pipeline/experiments/new_data_v3_2026-10-29/models/all_2000/preprocess.py",
+        "--weights",
+        "DragonThree_quality_pipeline/experiments/new_data_v3_2026-10-29/models/all_2000/model.pt",
+        "--csv",
+        "/path/to/local/Desktop/2026 Fall/CIS 5190/Final Project/baseline/data/val.csv"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 1.078403,
+      "system_cpu_seconds": 1.650024,
+      "total_cpu_seconds": 2.728427,
+      "wall_seconds": 1.0794546660035849
+    },
+    {
+      "name": "prepare",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/new_data_v3_2026-10-29/prepare.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 3.139729,
+      "system_cpu_seconds": 0.197573,
+      "total_cpu_seconds": 3.337302,
+      "wall_seconds": 3.8851353339850903
+    },
+    {
+      "name": "report",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/new_data_v3_2026-10-29/report.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 0.086573,
+      "system_cpu_seconds": 0.027764999999999998,
+      "total_cpu_seconds": 0.114338,
+      "wall_seconds": 0.1856387080042623
+    },
+    {
+      "name": "train",
+      "command": [
+        "/path/to/CIS5190",
+        "DragonThree_quality_pipeline/experiments/new_data_v3_2026-10-29/train.py"
+      ],
+      "exit_code": 0,
+      "user_cpu_seconds": 15.726754,
+      "system_cpu_seconds": 0.941452,
+      "total_cpu_seconds": 16.668205999999998,
+      "wall_seconds": 17.628021332988283
+    }
+  ],
+  "total_cpu_seconds": 23.924229999999998,
+  "total_measured_process_wall_seconds": 24.84510616597254,
+  "accounting": "Sum of nonoverlapping measured child user+system CPU. Includes imports, audit preparation, 180 CV fits, 2 full fits, bootstrap summaries, report generation and official evaluator. Excludes assistant reasoning/manual title review, shell/file delivery and this lightweight finalizer. No GPU.",
+  "final_test_accessed": false,
+  "v4_training_performed": false
+}

@@ -1,0 +1,9 @@
+{
+  "rows": 8000,
+  "batch_size": 32,
+  "threads": 4,
+  "seconds": 12.480602625000756,
+  "milliseconds_per_example": 1.5600753281250945,
+  "checkpoint_bytes": 184225091,
+  "scope": "Local CPU timing using repeated course training inputs, not leaderboard accuracy."
+}

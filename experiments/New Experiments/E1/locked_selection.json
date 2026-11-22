@@ -1,0 +1,30 @@
+{
+  "tuned_course": {
+    "rep": "A",
+    "C": 0.25,
+    "threshold": -0.15,
+    "course": 0.793923145665773,
+    "new": 0.6868333333333333,
+    "old": 0.5056353902507749,
+    "course_nbc": 0.8052698068940625,
+    "eligible": true,
+    "fallback": false
+  },
+  "augmented": {
+    "rep": "C",
+    "C": 1.0,
+    "threshold": -0.2,
+    "course": 0.7934763181411975,
+    "new": 0.718,
+    "old": 0.5102845872076641,
+    "course_nbc": 0.8117668290922216,
+    "eligible": true,
+    "fallback": false
+  },
+  "cv_cache_reuse": "Reuse fixed-grid outer fits for final all-training CV search; do NOT use best outer policy to change the procedure.",
+  "internal_gate_passed": false,
+  "development_used_for_selection": false,
+  "final_test_accessed": false,
+  "continuation_internal_gate_not_yet_applied_to_original_file": true,
+  "settings_changed": false
+}

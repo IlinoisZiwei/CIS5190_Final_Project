@@ -1,0 +1,41 @@
+{
+  "previous_search_cpu_seconds": 10.265621,
+  "completed_candidates": 28,
+  "validation_used_for_recipe_selection": false,
+  "best_training_cv": {
+    "index": 7,
+    "spec": {
+      "representation": "mean3",
+      "weight": 1.5,
+      "C": 4.0
+    },
+    "scale": 1.005554992263655,
+    "hybrid_weight": 0.5,
+    "threshold": -0.050000000000000044,
+    "cv_accuracy": 0.8396986230189659
+  },
+  "cpu_seconds": 53.446829,
+  "aggregate_search_cpu_seconds": 63.712453999999994,
+  "wall_seconds": 54.61608820800029,
+  "candidate_validation": {
+    "accuracy": 0.8538380651945321,
+    "correct": 812,
+    "rows": 951,
+    "scope": "Reused local development split, not hidden leaderboard."
+  },
+  "selected_recipe": {
+    "index": 7,
+    "spec": {
+      "representation": "mean3",
+      "weight": 1.5,
+      "C": 4.0
+    },
+    "scale": 1.005554992263655,
+    "hybrid_weight": 0.5,
+    "threshold": -0.050000000000000044,
+    "cv_accuracy": 0.8396986230189659
+  },
+  "target_reached": false,
+  "best_accuracy": 0.8538380651945321,
+  "stop_reason": "Completed bounded hybrid search"
+}

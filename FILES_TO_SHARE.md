@@ -1,0 +1,87 @@
+# Files proposed for GitHub
+
+- .gitignore
+- FILES_TO_SHARE.md
+- README.md
+- README.zh-CN.md
+- configs/experiment_environment.json
+- configs/requirements-deploy.lock.txt
+- data/dataset_card_template.md
+- data/manifests/approved_inputs.json
+- configs/BASE_RUN_CLOSED.txt
+- configs/path_migration.json
+- 03_Model_Versions_and_Final_Evaluation.ipynb
+- 02_Historical_Experiments_and_Results.ipynb
+- experiments/historical/collection.json
+- experiments/historical/factor_results.json
+- experiments/historical/feda_results.json
+- experiments/historical/latest_cpu.json
+- experiments/historical/latest_incomplete.json
+- experiments/historical/latest_nested.json
+- experiments/historical/latest_plan.json
+- experiments/historical/latest_selection.json
+- experiments/historical/latest_summary.json
+- experiments/historical/new_audit.json
+- experiments/historical/new_cpu.json
+- experiments/historical/new_folds.json
+- experiments/historical/new_plan.json
+- experiments/historical/new_results.json
+- experiments/historical/new_selection.json
+- experiments/historical/original_split.json
+- experiments/historical/paired_results.json
+- experiments/historical/style_summary.json
+- experiments/historical/v1_metrics.json
+- experiments/historical/v2_selection.json
+- experiments/historical/v3_comparison.json
+- experiments/historical/v3_selection.json
+- experiments/historical/v4_cpu.json
+- experiments/historical/v4_manifest.json
+- experiments/historical/v5_results.json
+- experiments/historical/v5_selection.json
+- experiments/historical/weight_joint.json
+- experiments/historical/weight_results.json
+- experiments/New Experiments/E0/baseline_metrics.json
+- experiments/New Experiments/E0/data_audit.json
+- experiments/New Experiments/E1/gates.json
+- experiments/New Experiments/E1/locked_selection.json
+- experiments/New Experiments/E1/nested_results.json
+- experiments/New Experiments/E1/summary.json
+- experiments/New Experiments/E2/locked_specifications.json
+- experiments/New Experiments/E2/results.json
+- experiments/New Experiments/E3/EXPERIMENT_RESULTS_EN.md
+- experiments/New Experiments/E3/EXPERIMENT_RESULTS_ZH.md
+- experiments/New Experiments/E3/development_paired_intervals.json
+- experiments/New Experiments/E3/error_transitions.json
+- experiments/New Experiments/E3/experiment_table.json
+- experiments/New Experiments/E3/publisher_length_slices.csv
+- experiments/New Experiments/E3/results.json
+- experiments/New Experiments/E3/results_master.json
+- experiments/New Experiments/E4/gate_decision.json
+- experiments/New Experiments/E5/final_decision.json
+- experiments/New Experiments/E6/interface_checks.json
+- experiments/New Experiments/E6/runtime.json
+- 01_Data_Collection_and_Cleaning.ipynb
+- requirements.lock.txt
+- scripts/run_budgeted.py
+- scripts/train_historical.py
+- scripts/worker_bootstrap.py
+- setup.sh
+- src/dragonthree/analyze_results.py
+- src/dragonthree/audit_and_baseline.py
+- src/dragonthree/e1_validation.py
+- src/dragonthree/v4_release_checks.py
+- src/dragonthree/lexical_model.py
+- src/dragonthree/e2_locked_eval.py
+- src/dragonthree/models_v1_v5.py
+- src/dragonthree/project_io.py
+- src/dragonthree/v3_validation.py
+- data/team_review/README.md
+- data/team_review/new_train.csv
+- data/team_review/paired_train.csv
+- data/team_review/paired_dev.csv
+- data/before_cleaning/README.md
+
+- data/before_cleaning/self_collected/README.md
+- data/before_cleaning/self_collected/replay_inputs/README.md
+- data/before_cleaning/self_collected/new_training_rebuild/README.md
+- data/TEAM_REPRODUCTION.md

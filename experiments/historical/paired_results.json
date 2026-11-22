@@ -1,0 +1,256 @@
+{
+  "selected": {
+    "name": "ext0.25_mix1.0_sem0.25",
+    "external_weight": 0.25,
+    "head_interpolation": 1.0,
+    "semantic_weight": 0.25,
+    "index": 8,
+    "course_accuracy": 0.8335120643431635,
+    "paired_accuracy": 0.6975,
+    "course_delta": -0.0018766756032171583,
+    "paired_delta": 0.035,
+    "course_delta_group_ci95": [
+      -0.009651603976573197,
+      0.005907626208378088
+    ],
+    "paired_delta_event_ci95": [
+      0.01125,
+      0.05875
+    ],
+    "eligible": true
+  },
+  "development": {
+    "course_dev": {
+      "baseline": {
+        "n": 951,
+        "correct": 809,
+        "accuracy": 0.85068349106204,
+        "balanced_accuracy": 0.8507054400707652,
+        "macro_f1": 0.8506238662006106,
+        "confusion_matrix": [
+          [
+            395,
+            81
+          ],
+          [
+            61,
+            414
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.8662280701754386,
+            "recall": 0.8298319327731093,
+            "f1": 0.8476394849785408,
+            "support": 476
+          },
+          "NBC": {
+            "precision": 0.8363636363636363,
+            "recall": 0.871578947368421,
+            "f1": 0.8536082474226804,
+            "support": 475
+          }
+        },
+        "roc_auc": 0.9223352498894294
+      },
+      "candidate": {
+        "n": 951,
+        "correct": 809,
+        "accuracy": 0.85068349106204,
+        "balanced_accuracy": 0.8507120743034056,
+        "macro_f1": 0.850580232269943,
+        "confusion_matrix": [
+          [
+            392,
+            84
+          ],
+          [
+            58,
+            417
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.8711111111111111,
+            "recall": 0.8235294117647058,
+            "f1": 0.8466522678185745,
+            "support": 476
+          },
+          "NBC": {
+            "precision": 0.8323353293413174,
+            "recall": 0.8778947368421053,
+            "f1": 0.8545081967213115,
+            "support": 475
+          }
+        },
+        "roc_auc": 0.9263379035824857
+      },
+      "fixed_errors": 26,
+      "new_errors": 26,
+      "accuracy_delta_ci95": [
+        -0.014767932489451477,
+        0.015789473684210527
+      ],
+      "ci_grouping": "normalized_text_only_not_verified_events"
+    },
+    "external_dev": {
+      "baseline": {
+        "n": 306,
+        "correct": 143,
+        "accuracy": 0.4673202614379085,
+        "balanced_accuracy": 0.4673202614379085,
+        "macro_f1": 0.42278182175880386,
+        "confusion_matrix": [
+          [
+            29,
+            124
+          ],
+          [
+            39,
+            114
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.4264705882352941,
+            "recall": 0.1895424836601307,
+            "f1": 0.26244343891402716,
+            "support": 153
+          },
+          "NBC": {
+            "precision": 0.4789915966386555,
+            "recall": 0.7450980392156863,
+            "f1": 0.5831202046035806,
+            "support": 153
+          }
+        },
+        "roc_auc": 0.4101413986073732
+      },
+      "candidate": {
+        "n": 306,
+        "correct": 142,
+        "accuracy": 0.46405228758169936,
+        "balanced_accuracy": 0.46405228758169936,
+        "macro_f1": 0.4247329084322986,
+        "confusion_matrix": [
+          [
+            31,
+            122
+          ],
+          [
+            42,
+            111
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.4246575342465753,
+            "recall": 0.20261437908496732,
+            "f1": 0.2743362831858407,
+            "support": 153
+          },
+          "NBC": {
+            "precision": 0.47639484978540775,
+            "recall": 0.7254901960784313,
+            "f1": 0.5751295336787565,
+            "support": 153
+          }
+        },
+        "roc_auc": 0.4391046178820112
+      },
+      "fixed_errors": 12,
+      "new_errors": 13,
+      "accuracy_delta_ci95": [
+        -0.03594771241830065,
+        0.029411764705882353
+      ],
+      "ci_grouping": "normalized_text_only_not_verified_events"
+    },
+    "paired_confirmation": {
+      "baseline": {
+        "n": 200,
+        "correct": 115,
+        "accuracy": 0.575,
+        "balanced_accuracy": 0.575,
+        "macro_f1": 0.5747342088805503,
+        "confusion_matrix": [
+          [
+            60,
+            40
+          ],
+          [
+            45,
+            55
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.5714285714285714,
+            "recall": 0.6,
+            "f1": 0.5853658536585366,
+            "support": 100
+          },
+          "NBC": {
+            "precision": 0.5789473684210527,
+            "recall": 0.55,
+            "f1": 0.5641025641025641,
+            "support": 100
+          }
+        },
+        "roc_auc": 0.6364
+      },
+      "candidate": {
+        "n": 200,
+        "correct": 129,
+        "accuracy": 0.645,
+        "balanced_accuracy": 0.645,
+        "macro_f1": 0.6447779862414009,
+        "confusion_matrix": [
+          [
+            62,
+            38
+          ],
+          [
+            33,
+            67
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.6526315789473685,
+            "recall": 0.62,
+            "f1": 0.6358974358974359,
+            "support": 100
+          },
+          "NBC": {
+            "precision": 0.638095238095238,
+            "recall": 0.67,
+            "f1": 0.6536585365853659,
+            "support": 100
+          }
+        },
+        "roc_auc": 0.7047
+      },
+      "fixed_errors": 24,
+      "new_errors": 10,
+      "accuracy_delta_ci95": [
+        0.015,
+        0.12
+      ],
+      "ci_grouping": "event"
+    }
+  },
+  "confirmation_gate_passed": false,
+  "existing_submission_replaced": false,
+  "encoder_weights_unchanged": true,
+  "export_parity": true,
+  "final_test_accessed": false,
+  "csv_paths_opened": [
+    "/path/to/local/Desktop/2026 Fall/CIS 5190/Final Project/baseline/data/val.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/data/external_dev_urls.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/paired_news_v4_2026-10-28/paired_confirmation.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/paired_news_v4_2026-10-28/paired_train.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/training/training_metadata.csv"
+  ],
+  "cpu_seconds": 81.288185
+}

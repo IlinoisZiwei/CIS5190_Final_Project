@@ -1,0 +1,20 @@
+.venv*/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pt
+*.joblib
+*.zip
+/data/approved/
+/models/
+*.log
+
+# Local course inputs and generated row-level views
+/data/before_cleaning/*.csv
+/data/generated/
+
+# Local self-collected discovery snapshots
+/data/before_cleaning/self_collected/**/*.jsonl
+/data/before_cleaning/self_collected/replay_inputs/*.json
+/data/before_cleaning/self_collected/new_training_rebuild/*.json
+/data/before_cleaning/self_collected/new_training_rebuild/*.csv

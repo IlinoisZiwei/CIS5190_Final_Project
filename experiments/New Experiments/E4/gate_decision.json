@@ -1,0 +1,60 @@
+{
+  "stage": "E4",
+  "status": "not_started_gate_failed",
+  "conditionally_authorized": true,
+  "conditional_cpu_cap_seconds": 600,
+  "prerequisites_passed": false,
+  "checks": {
+    "E1_complete_nine_outer_folds": true,
+    "E1_internal_gate": true,
+    "G5_course_accuracy": false,
+    "G5_course_NBC_recall": false,
+    "G6_both_external_panels_non_decreasing": true,
+    "G6_at_least_one_external_panel_improved": true
+  },
+  "failed_prerequisites": [
+    "G5_course_accuracy",
+    "G5_course_NBC_recall"
+  ],
+  "reason": "The conditionally authorized V4 migration was not started because the frozen E1/E2 prerequisite gates failed: G5_course_accuracy, G5_course_NBC_recall",
+  "course_protection": {
+    "n": 951,
+    "A_correct": 776,
+    "C_correct": 764,
+    "delta_correct": -12,
+    "delta_accuracy": -0.012618296529968487,
+    "maximum_accuracy_loss": 0.005,
+    "maximum_extra_errors": 4
+  },
+  "NBC_protection": {
+    "n": 475,
+    "A_true_positives": 387,
+    "C_true_positives": 382,
+    "delta_true_positives": -5,
+    "delta_recall": -0.010526315789473717,
+    "maximum_recall_loss": 0.01,
+    "maximum_extra_misses": 4
+  },
+  "external_development": {
+    "external_dev": {
+      "n": 306,
+      "A_correct": 122,
+      "C_correct": 125
+    },
+    "paired_dev": {
+      "n": 200,
+      "A_correct": 112,
+      "C_correct": 120
+    }
+  },
+  "model_training_started": false,
+  "model_fits": 0,
+  "new_model_predictions": 0,
+  "existing_models_overwritten": false,
+  "final_test_accessed": false,
+  "source_files": [
+    "E1/nested_results.json",
+    "E2/results.json"
+  ],
+  "interpretation": "A prerequisite decision is not a trained V4 experiment and has no V4 accuracy result."
+}

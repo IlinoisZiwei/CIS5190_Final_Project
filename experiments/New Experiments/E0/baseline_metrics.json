@@ -1,0 +1,68 @@
+{
+  "model": "original_v4_validated",
+  "training_rows": 3849,
+  "evaluation_level": "reused development",
+  "torch": "2.9.1",
+  "panels": {
+    "course_dev": {
+      "n": 951,
+      "correct": 810,
+      "accuracy": 0.8517350157728707,
+      "balanced_accuracy": 0.851751437417072,
+      "macro_f1": 0.851702877113044,
+      "auc": 0.9227509951348961,
+      "fox_recall": 0.8361344537815126,
+      "nbc_recall": 0.8673684210526316,
+      "confusion_matrix": [
+        [
+          398,
+          78
+        ],
+        [
+          63,
+          412
+        ]
+      ]
+    },
+    "legacy_dev": {
+      "n": 306,
+      "correct": 142,
+      "accuracy": 0.46405228758169936,
+      "balanced_accuracy": 0.46405228758169936,
+      "macro_f1": 0.4247329084322986,
+      "auc": 0.4127045153573412,
+      "fox_recall": 0.20261437908496732,
+      "nbc_recall": 0.7254901960784313,
+      "confusion_matrix": [
+        [
+          31,
+          122
+        ],
+        [
+          42,
+          111
+        ]
+      ]
+    },
+    "paired_dev": {
+      "n": 200,
+      "correct": 115,
+      "accuracy": 0.575,
+      "balanced_accuracy": 0.575,
+      "macro_f1": 0.5744787364521539,
+      "auc": 0.6395000000000001,
+      "fox_recall": 0.61,
+      "nbc_recall": 0.54,
+      "confusion_matrix": [
+        [
+          61,
+          39
+        ],
+        [
+          46,
+          54
+        ]
+      ]
+    }
+  }
+}

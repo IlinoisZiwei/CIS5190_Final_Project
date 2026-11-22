@@ -1,0 +1,467 @@
+{
+  "status": "complete",
+  "fixed_grid_complete_folds": 9,
+  "nested_completed_folds": 9,
+  "nested_aggregated_complete_partitions": 3,
+  "final_model_exported": false,
+  "development_evaluated": false,
+  "final_selection": {
+    "tuned_course": {
+      "rep": "A",
+      "C": 0.25,
+      "threshold": -0.15
+    },
+    "augmented": {
+      "rep": "C",
+      "C": 1.0,
+      "threshold": -0.2
+    }
+  },
+  "fixed_feature_results": [
+    {
+      "representation": "A",
+      "C": 4.0,
+      "threshold": -0.05,
+      "course": {
+        "n": 3730,
+        "accuracy": 0.7926720285969616,
+        "accuracy_by_seed": [
+          0.7892761394101877,
+          0.7994638069705093,
+          0.7892761394101877
+        ],
+        "correct_by_seed": [
+          2944,
+          2982,
+          2944
+        ],
+        "balanced_accuracy": 0.7923904868674142,
+        "macro_f1": 0.7923876911874331,
+        "roc_auc": 0.8724117410664268,
+        "fox_recall": 0.8215613382899628,
+        "nbc_recall": 0.7632196354448655
+      },
+      "new": {
+        "n": 2000,
+        "accuracy": 0.6880000000000001,
+        "accuracy_by_seed": [
+          0.687,
+          0.684,
+          0.693
+        ],
+        "correct_by_seed": [
+          1374,
+          1368,
+          1386
+        ],
+        "balanced_accuracy": 0.6880000000000001,
+        "macro_f1": 0.6848031707824681,
+        "roc_auc": 0.7637753333333334,
+        "fox_recall": 0.5873333333333334,
+        "nbc_recall": 0.7886666666666667
+      },
+      "old": {
+        "n": 2366,
+        "accuracy": 0.5023950408565793,
+        "accuracy_by_seed": [
+          0.5029585798816568,
+          0.5046491969568893,
+          0.4995773457311919
+        ],
+        "correct_by_seed": [
+          1190,
+          1194,
+          1182
+        ],
+        "balanced_accuracy": 0.5023950408565793,
+        "macro_f1": 0.5022353234853526,
+        "roc_auc": 0.5036064353965388,
+        "fox_recall": 0.5193012116089039,
+        "nbc_recall": 0.48548887010425473
+      },
+      "course_train_accuracy": 1.0,
+      "new_train_accuracy": null,
+      "in_sample_diagnostics_available_folds": 8,
+      "in_sample_diagnostics_expected_folds": 9,
+      "in_sample_diagnostics_complete": false,
+      "in_sample_diagnostics_tags": [
+        "seed5190_outer0",
+        "seed5190_outer1",
+        "seed5190_outer2",
+        "seed5191_outer0",
+        "seed5191_outer1",
+        "seed5191_outer2",
+        "seed5192_outer0",
+        "seed5192_outer1"
+      ],
+      "in_sample_diagnostics_source": "preserved historical fixed-grid fitting logs only",
+      "in_sample_diagnostics_note": "In-sample means use 8 available historical fits, whereas OOF metrics use all nine fixed-grid folds. Missing fit diagnostics are not inferred from validation scores and no model is refitted to manufacture them."
+    },
+    {
+      "representation": "B",
+      "C": 4.0,
+      "threshold": -0.05,
+      "course": {
+        "n": 3730,
+        "accuracy": 0.7942806076854335,
+        "accuracy_by_seed": [
+          0.792225201072386,
+          0.8008042895442359,
+          0.7898123324396783
+        ],
+        "correct_by_seed": [
+          2955,
+          2987,
+          2946
+        ],
+        "balanced_accuracy": 0.7938422245678259,
+        "macro_f1": 0.7936926861597279,
+        "roc_auc": 0.8712783946409056,
+        "fox_recall": 0.8392635864754823,
+        "nbc_recall": 0.7484208626601697
+      },
+      "new": {
+        "n": 2000,
+        "accuracy": 0.7331666666666666,
+        "accuracy_by_seed": [
+          0.732,
+          0.7375,
+          0.73
+        ],
+        "correct_by_seed": [
+          1464,
+          1475,
+          1460
+        ],
+        "balanced_accuracy": 0.7331666666666666,
+        "macro_f1": 0.7321581785373418,
+        "roc_auc": 0.814677,
+        "fox_recall": 0.672,
+        "nbc_recall": 0.7943333333333333
+      },
+      "old": {
+        "n": 2366,
+        "accuracy": 0.5097210481825866,
+        "accuracy_by_seed": [
+          0.5105663567202029,
+          0.5092983939137785,
+          0.5092983939137785
+        ],
+        "correct_by_seed": [
+          1208,
+          1205,
+          1205
+        ],
+        "balanced_accuracy": 0.5097210481825866,
+        "macro_f1": 0.5091220598975499,
+        "roc_auc": 0.5140797819775648,
+        "fox_recall": 0.5443786982248521,
+        "nbc_recall": 0.47506339814032117
+      },
+      "course_train_accuracy": 1.0,
+      "new_train_accuracy": 0.9745929467715471,
+      "in_sample_diagnostics_available_folds": 8,
+      "in_sample_diagnostics_expected_folds": 9,
+      "in_sample_diagnostics_complete": false,
+      "in_sample_diagnostics_tags": [
+        "seed5190_outer0",
+        "seed5190_outer1",
+        "seed5190_outer2",
+        "seed5191_outer0",
+        "seed5191_outer1",
+        "seed5191_outer2",
+        "seed5192_outer0",
+        "seed5192_outer1"
+      ],
+      "in_sample_diagnostics_source": "preserved historical fixed-grid fitting logs only",
+      "in_sample_diagnostics_note": "In-sample means use 8 available historical fits, whereas OOF metrics use all nine fixed-grid folds. Missing fit diagnostics are not inferred from validation scores and no model is refitted to manufacture them."
+    },
+    {
+      "representation": "C",
+      "C": 4.0,
+      "threshold": -0.05,
+      "course": {
+        "n": 3730,
+        "accuracy": 0.7936550491510278,
+        "accuracy_by_seed": [
+          0.7906166219839142,
+          0.8002680965147453,
+          0.7900804289544235
+        ],
+        "correct_by_seed": [
+          2949,
+          2985,
+          2947
+        ],
+        "balanced_accuracy": 0.7932140199888765,
+        "macro_f1": 0.793059663417385,
+        "roc_auc": 0.8714931793630699,
+        "fox_recall": 0.838909541511772,
+        "nbc_recall": 0.7475184984659808
+      },
+      "new": {
+        "n": 2000,
+        "accuracy": 0.7333333333333334,
+        "accuracy_by_seed": [
+          0.7365,
+          0.734,
+          0.7295
+        ],
+        "correct_by_seed": [
+          1473,
+          1468,
+          1459
+        ],
+        "balanced_accuracy": 0.7333333333333334,
+        "macro_f1": 0.7323400699667783,
+        "roc_auc": 0.8138186666666667,
+        "fox_recall": 0.6726666666666667,
+        "nbc_recall": 0.794
+      },
+      "old": {
+        "n": 2366,
+        "accuracy": 0.5090166244012398,
+        "accuracy_by_seed": [
+          0.510989010989011,
+          0.5059171597633136,
+          0.5101437024513947
+        ],
+        "correct_by_seed": [
+          1209,
+          1197,
+          1207
+        ],
+        "balanced_accuracy": 0.5090166244012398,
+        "macro_f1": 0.5084047251202578,
+        "roc_auc": 0.5142017312509543,
+        "fox_recall": 0.5440969287123133,
+        "nbc_recall": 0.4739363200901663
+      },
+      "course_train_accuracy": 1.0,
+      "new_train_accuracy": 0.9774054473341177,
+      "in_sample_diagnostics_available_folds": 8,
+      "in_sample_diagnostics_expected_folds": 9,
+      "in_sample_diagnostics_complete": false,
+      "in_sample_diagnostics_tags": [
+        "seed5190_outer0",
+        "seed5190_outer1",
+        "seed5190_outer2",
+        "seed5191_outer0",
+        "seed5191_outer1",
+        "seed5191_outer2",
+        "seed5192_outer0",
+        "seed5192_outer1"
+      ],
+      "in_sample_diagnostics_source": "preserved historical fixed-grid fitting logs only",
+      "in_sample_diagnostics_note": "In-sample means use 8 available historical fits, whereas OOF metrics use all nine fixed-grid folds. Missing fit diagnostics are not inferred from validation scores and no model is refitted to manufacture them."
+    },
+    {
+      "representation": "D",
+      "C": 4.0,
+      "threshold": -0.05,
+      "course": {
+        "n": 3730,
+        "accuracy": 0.7970509383378016,
+        "accuracy_by_seed": [
+          0.7927613941018766,
+          0.8010723860589812,
+          0.797319034852547
+        ],
+        "correct_by_seed": [
+          2957,
+          2988,
+          2974
+        ],
+        "balanced_accuracy": 0.7966309276773549,
+        "macro_f1": 0.7965103046218079,
+        "roc_auc": 0.8741377821469521,
+        "fox_recall": 0.8401486988847583,
+        "nbc_recall": 0.7531131564699513
+      },
+      "new": {
+        "n": 2000,
+        "accuracy": 0.7321666666666666,
+        "accuracy_by_seed": [
+          0.732,
+          0.7335,
+          0.731
+        ],
+        "correct_by_seed": [
+          1464,
+          1467,
+          1462
+        ],
+        "balanced_accuracy": 0.7321666666666667,
+        "macro_f1": 0.7307104165555428,
+        "roc_auc": 0.8160626666666667,
+        "fox_recall": 0.6589999999999999,
+        "nbc_recall": 0.8053333333333335
+      },
+      "old": {
+        "n": 2366,
+        "accuracy": 0.5025359256128487,
+        "accuracy_by_seed": [
+          0.49619611158072696,
+          0.5050718512256974,
+          0.5063398140321217
+        ],
+        "correct_by_seed": [
+          1174,
+          1195,
+          1198
+        ],
+        "balanced_accuracy": 0.5025359256128487,
+        "macro_f1": 0.5020505366483808,
+        "roc_auc": 0.5079222964000908,
+        "fox_recall": 0.5328261482107636,
+        "nbc_recall": 0.4722457030149338
+      },
+      "course_train_accuracy": 1.0,
+      "new_train_accuracy": 0.9958746004077029,
+      "in_sample_diagnostics_available_folds": 8,
+      "in_sample_diagnostics_expected_folds": 9,
+      "in_sample_diagnostics_complete": false,
+      "in_sample_diagnostics_tags": [
+        "seed5190_outer0",
+        "seed5190_outer1",
+        "seed5190_outer2",
+        "seed5191_outer0",
+        "seed5191_outer1",
+        "seed5191_outer2",
+        "seed5192_outer0",
+        "seed5192_outer1"
+      ],
+      "in_sample_diagnostics_source": "preserved historical fixed-grid fitting logs only",
+      "in_sample_diagnostics_note": "In-sample means use 8 available historical fits, whereas OOF metrics use all nine fixed-grid folds. Missing fit diagnostics are not inferred from validation scores and no model is refitted to manufacture them."
+    }
+  ],
+  "nested_primary": {
+    "policy": "augmented_joint",
+    "course": {
+      "n": 3730,
+      "accuracy": 0.7886505808757819,
+      "accuracy_by_seed": [
+        0.7871313672922252,
+        0.7914209115281501,
+        0.7873994638069705
+      ],
+      "correct_by_seed": [
+        2936,
+        2952,
+        2937
+      ],
+      "balanced_accuracy": 0.788609326909152,
+      "macro_f1": 0.7885369928073039,
+      "roc_auc": 0.8712369903571148,
+      "fox_recall": 0.7928836962294211,
+      "nbc_recall": 0.7843349575888828
+    },
+    "new": {
+      "n": 2000,
+      "accuracy": 0.7254999999999999,
+      "accuracy_by_seed": [
+        0.731,
+        0.7265,
+        0.719
+      ],
+      "correct_by_seed": [
+        1462,
+        1453,
+        1438
+      ],
+      "balanced_accuracy": 0.7254999999999999,
+      "macro_f1": 0.7219499209079471,
+      "roc_auc": 0.812468,
+      "fox_recall": 0.6143333333333333,
+      "nbc_recall": 0.8366666666666666
+    },
+    "old": {
+      "n": 2366,
+      "accuracy": 0.5080304311073541,
+      "accuracy_by_seed": [
+        0.5080304311073541,
+        0.5050718512256974,
+        0.510989010989011
+      ],
+      "correct_by_seed": [
+        1202,
+        1195,
+        1209
+      ],
+      "balanced_accuracy": 0.5080304311073541,
+      "macro_f1": 0.5073029328574644,
+      "roc_auc": 0.5119189932896936,
+      "fox_recall": 0.4761904761904762,
+      "nbc_recall": 0.5398703860242322
+    },
+    "new_short_fox_recall": 0.3302891933028919,
+    "new_short_nbc_recall": 0.9459459459459459
+  },
+  "nested_tuned_course": {
+    "policy": "A_joint",
+    "course": {
+      "n": 3730,
+      "accuracy": 0.7908847184986595,
+      "accuracy_by_seed": [
+        0.7839142091152815,
+        0.7957104557640751,
+        0.793029490616622
+      ],
+      "correct_by_seed": [
+        2924,
+        2968,
+        2958
+      ],
+      "balanced_accuracy": 0.7908341841817809,
+      "macro_f1": 0.790841479327093,
+      "roc_auc": 0.8734565283293957,
+      "fox_recall": 0.7960701009028147,
+      "nbc_recall": 0.7855982674607471
+    },
+    "new": {
+      "n": 2000,
+      "accuracy": 0.6854999999999999,
+      "accuracy_by_seed": [
+        0.686,
+        0.6875,
+        0.683
+      ],
+      "correct_by_seed": [
+        1372,
+        1375,
+        1366
+      ],
+      "balanced_accuracy": 0.6854999999999999,
+      "macro_f1": 0.6799391897477376,
+      "roc_auc": 0.764644,
+      "fox_recall": 0.5539999999999999,
+      "nbc_recall": 0.8170000000000001
+    },
+    "old": {
+      "n": 2366,
+      "accuracy": 0.5039447731755424,
+      "accuracy_by_seed": [
+        0.5050718512256974,
+        0.5004226542688082,
+        0.5063398140321217
+      ],
+      "correct_by_seed": [
+        1195,
+        1184,
+        1198
+      ],
+      "balanced_accuracy": 0.5039447731755424,
+      "macro_f1": 0.5037460354642657,
+      "roc_auc": 0.5018226890910421,
+      "fox_recall": 0.48436179205409974,
+      "nbc_recall": 0.5235277542969851
+    },
+    "new_short_fox_recall": 0.1933028919330289,
+    "new_short_nbc_recall": 0.9379379379379379
+  },
+  "internal_gate_passed": true,
+  "recommend_for_future_v4": false,
+  "recommendation_note": "E1 does not itself satisfy E4 prerequisites. E4 is conditionally authorized under the current approved scope and requires the E2 development gates and the applicable CPU cap before it can start.",
+  "final_test_accessed": false,
+  "new_fits": 49
+}

@@ -1,0 +1,396 @@
+{
+  "status": "complete",
+  "stage": "E2",
+  "models": {
+    "tuned_course": {
+      "specification": {
+        "rep": "A",
+        "C": 0.25,
+        "threshold": -0.15
+      },
+      "development": {
+        "course_dev": {
+          "n": 951,
+          "correct": 776,
+          "accuracy": 0.8159831756046267,
+          "balanced_accuracy": 0.8159818664307829,
+          "macro_f1": 0.8159823617283117,
+          "roc_auc": 0.8945157010172491,
+          "confusion_matrix": [
+            [
+              389,
+              87
+            ],
+            [
+              88,
+              387
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.8155136268343816,
+              "recall": 0.8172268907563025,
+              "f1": 0.8163693599160545,
+              "support": 476
+            },
+            "NBC": {
+              "precision": 0.8164556962025317,
+              "recall": 0.8147368421052632,
+              "f1": 0.815595363540569,
+              "support": 475
+            }
+          }
+        },
+        "external_dev": {
+          "n": 306,
+          "correct": 122,
+          "accuracy": 0.39869281045751637,
+          "balanced_accuracy": 0.39869281045751637,
+          "macro_f1": 0.38352384706346077,
+          "roc_auc": 0.38626169422017176,
+          "confusion_matrix": [
+            [
+              37,
+              116
+            ],
+            [
+              68,
+              85
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.3523809523809524,
+              "recall": 0.24183006535947713,
+              "f1": 0.2868217054263566,
+              "support": 153
+            },
+            "NBC": {
+              "precision": 0.4228855721393035,
+              "recall": 0.5555555555555556,
+              "f1": 0.480225988700565,
+              "support": 153
+            }
+          }
+        },
+        "paired_dev": {
+          "n": 200,
+          "correct": 112,
+          "accuracy": 0.56,
+          "balanced_accuracy": 0.56,
+          "macro_f1": 0.5571658615136876,
+          "roc_auc": 0.5994999999999999,
+          "confusion_matrix": [
+            [
+              64,
+              36
+            ],
+            [
+              52,
+              48
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.5517241379310345,
+              "recall": 0.64,
+              "f1": 0.5925925925925926,
+              "support": 100
+            },
+            "NBC": {
+              "precision": 0.5714285714285714,
+              "recall": 0.48,
+              "f1": 0.5217391304347826,
+              "support": 100
+            }
+          }
+        }
+      },
+      "in_sample_diagnostics": {
+        "fitted_rows": {
+          "n": 3730,
+          "correct": 3722,
+          "accuracy": 0.9978552278820375,
+          "balanced_accuracy": 0.9978757302177377,
+          "macro_f1": 0.9978551070160715,
+          "roc_auc": 0.999994249405029,
+          "confusion_matrix": [
+            [
+              1875,
+              8
+            ],
+            [
+              0,
+              1847
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 1.0,
+              "recall": 0.9957514604354754,
+              "f1": 0.9978712080894092,
+              "support": 1883
+            },
+            "NBC": {
+              "precision": 0.9956873315363881,
+              "recall": 1.0,
+              "f1": 0.9978390059427337,
+              "support": 1847
+            }
+          }
+        }
+      },
+      "export_parity": {
+        "course_dev": {
+          "max_abs_score_error": 2.9976021664879227e-15,
+          "prediction_identity": true,
+          "atol": 1e-09,
+          "rtol": 1e-09
+        },
+        "external_dev": {
+          "max_abs_score_error": 2.1094237467877974e-15,
+          "prediction_identity": true,
+          "atol": 1e-09,
+          "rtol": 1e-09
+        },
+        "paired_dev": {
+          "max_abs_score_error": 2.4424906541753444e-15,
+          "prediction_identity": true,
+          "atol": 1e-09,
+          "rtol": 1e-09
+        }
+      },
+      "feature_layout": [
+        {
+          "metadata_bytes": 512125,
+          "features": 36022
+        },
+        {
+          "metadata_bytes": 369393,
+          "features": 49447
+        }
+      ],
+      "checkpoint_bytes": 2251831
+    },
+    "augmented": {
+      "specification": {
+        "rep": "C",
+        "C": 1.0,
+        "threshold": -0.2
+      },
+      "development": {
+        "course_dev": {
+          "n": 951,
+          "correct": 764,
+          "accuracy": 0.8033648790746583,
+          "balanced_accuracy": 0.8033657673595754,
+          "macro_f1": 0.8033648790746583,
+          "roc_auc": 0.8967315347191508,
+          "confusion_matrix": [
+            [
+              382,
+              94
+            ],
+            [
+              93,
+              382
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.8042105263157895,
+              "recall": 0.8025210084033614,
+              "f1": 0.8033648790746583,
+              "support": 476
+            },
+            "NBC": {
+              "precision": 0.8025210084033614,
+              "recall": 0.8042105263157895,
+              "f1": 0.8033648790746583,
+              "support": 475
+            }
+          }
+        },
+        "external_dev": {
+          "n": 306,
+          "correct": 125,
+          "accuracy": 0.4084967320261438,
+          "balanced_accuracy": 0.4084967320261438,
+          "macro_f1": 0.39020335362832637,
+          "roc_auc": 0.3965995984450425,
+          "confusion_matrix": [
+            [
+              36,
+              117
+            ],
+            [
+              64,
+              89
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.36,
+              "recall": 0.23529411764705882,
+              "f1": 0.2845849802371542,
+              "support": 153
+            },
+            "NBC": {
+              "precision": 0.4320388349514563,
+              "recall": 0.5816993464052288,
+              "f1": 0.4958217270194986,
+              "support": 153
+            }
+          }
+        },
+        "paired_dev": {
+          "n": 200,
+          "correct": 120,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.6,
+          "macro_f1": 0.595959595959596,
+          "roc_auc": 0.6049,
+          "confusion_matrix": [
+            [
+              70,
+              30
+            ],
+            [
+              50,
+              50
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.5833333333333334,
+              "recall": 0.7,
+              "f1": 0.6363636363636364,
+              "support": 100
+            },
+            "NBC": {
+              "precision": 0.625,
+              "recall": 0.5,
+              "f1": 0.5555555555555556,
+              "support": 100
+            }
+          }
+        }
+      },
+      "in_sample_diagnostics": {
+        "fitted_rows": {
+          "n": 5730,
+          "correct": 5410,
+          "accuracy": 0.944153577661431,
+          "balanced_accuracy": 0.9443969901683755,
+          "macro_f1": 0.9440933952517682,
+          "roc_auc": 0.9908673362410195,
+          "confusion_matrix": [
+            [
+              2611,
+              272
+            ],
+            [
+              48,
+              2799
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.9819481007897706,
+              "recall": 0.905653832813042,
+              "f1": 0.9422591122338506,
+              "support": 2883
+            },
+            "NBC": {
+              "precision": 0.9114295017909476,
+              "recall": 0.9831401475237092,
+              "f1": 0.9459276782696857,
+              "support": 2847
+            }
+          }
+        }
+      },
+      "export_parity": {
+        "course_dev": {
+          "max_abs_score_error": 4.6629367034256575e-15,
+          "prediction_identity": true,
+          "atol": 1e-09,
+          "rtol": 1e-09
+        },
+        "external_dev": {
+          "max_abs_score_error": 3.552713678800501e-15,
+          "prediction_identity": true,
+          "atol": 1e-09,
+          "rtol": 1e-09
+        },
+        "paired_dev": {
+          "max_abs_score_error": 3.552713678800501e-15,
+          "prediction_identity": true,
+          "atol": 1e-09,
+          "rtol": 1e-09
+        }
+      },
+      "feature_layout": [
+        {
+          "metadata_bytes": 512125,
+          "features": 36022
+        },
+        {
+          "metadata_bytes": 369393,
+          "features": 49447
+        }
+      ],
+      "checkpoint_bytes": 2251831
+    }
+  },
+  "gates": {
+    "G5_course_accuracy": false,
+    "G5_course_nbc_recall": false,
+    "G6_both_external_panels_non_decreasing": true,
+    "G6_at_least_one_external_panel_improved": true
+  },
+  "development_gate_passed": false,
+  "model_fits": 2,
+  "development_used_for_selection": false,
+  "internal_gate_evaluated_in": "E1/nested_results.json",
+  "promotion_policy": "Descriptive confirmation only. E1 failure cannot be reversed by E2.",
+  "v4_trained": false,
+  "existing_models_replaced": false,
+  "final_test_accessed": false,
+  "new_leaderboard_accuracy": null,
+  "dataset_reads": [
+    {
+      "key": "audited_training",
+      "path": "data/approved/audited_training.jsonl",
+      "rows": 8096,
+      "sha256": "922acacdf1b26bc8025d728f2feb3fcbc3eb20a2f9de147c63629d9929b466da"
+    },
+    {
+      "key": "course_dev",
+      "path": "data/approved/course_dev.csv",
+      "rows": 951,
+      "sha256": "4d12ef27eaa80a7e1c31d35269f95c9721464b2f13fab34e1dcf92eca895b512"
+    },
+    {
+      "key": "legacy_dev",
+      "path": "data/approved/legacy_dev.csv",
+      "rows": 306,
+      "sha256": "98b8a8e52dc45a149e0bff2f93176e5220869f1e624bfdc68f75061bd38ea319"
+    },
+    {
+      "key": "paired_dev",
+      "path": "data/approved/paired_dev.csv",
+      "rows": 200,
+      "sha256": "f166404e45ae752722a8bae99f38f55f08e4eb0e9ecfa31558dca1c3dafb22f6"
+    }
+  ],
+  "cpu_seconds": 1.481681,
+  "wall_seconds": 1.4925396249745972,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "torch": "2.9.1"
+  }
+}

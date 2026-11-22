@@ -1,0 +1,15 @@
+{
+  "internal_gate_passed": true,
+  "checks": {
+    "all_nine_nested_folds_complete": true,
+    "course_accuracy_protected": true,
+    "course_nbc_recall_protected": true,
+    "old_panel_accuracy_protected": true,
+    "new_gain_positive_at_least_two_partitions": true,
+    "new_group_bootstrap_lower95_positive": true
+  },
+  "development_gate": "not evaluated by E1",
+  "E4_authorized_by_this_stage": false,
+  "E4_conditional_authorization_from_scope": true,
+  "E4_prerequisite_note": "Consult configs/approved_scope.json and E2/results.json. A passed E1 internal gate alone cannot start E4; the E2 development gates and current approved CPU limits must also be satisfied."
+}

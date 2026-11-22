@@ -1,0 +1,334 @@
+{
+  "selected": {
+    "name": "short4_w0.1",
+    "short_factor": 4,
+    "weight": 0.1,
+    "balanced": true,
+    "course_accuracy": 0.8329758713136729,
+    "paired_accuracy": 0.70625,
+    "paired_short_fox_recall": 0.4351851851851852,
+    "paired_short_fox_n": 108,
+    "index": 12
+  },
+  "development": {
+    "course_dev": {
+      "baseline": {
+        "n": 951,
+        "correct": 809,
+        "accuracy": 0.85068349106204,
+        "balanced_accuracy": 0.8507054400707652,
+        "macro_f1": 0.8506238662006106,
+        "confusion_matrix": [
+          [
+            395,
+            81
+          ],
+          [
+            61,
+            414
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.8662280701754386,
+            "recall": 0.8298319327731093,
+            "f1": 0.8476394849785408,
+            "support": 476
+          },
+          "NBC": {
+            "precision": 0.8363636363636363,
+            "recall": 0.871578947368421,
+            "f1": 0.8536082474226804,
+            "support": 475
+          }
+        },
+        "roc_auc": 0.9223352498894294
+      },
+      "previous": {
+        "n": 951,
+        "correct": 809,
+        "accuracy": 0.85068349106204,
+        "balanced_accuracy": 0.8507120743034056,
+        "macro_f1": 0.850580232269943,
+        "confusion_matrix": [
+          [
+            392,
+            84
+          ],
+          [
+            58,
+            417
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.8711111111111111,
+            "recall": 0.8235294117647058,
+            "f1": 0.8466522678185745,
+            "support": 476
+          },
+          "NBC": {
+            "precision": 0.8323353293413174,
+            "recall": 0.8778947368421053,
+            "f1": 0.8545081967213115,
+            "support": 475
+          }
+        },
+        "roc_auc": 0.9263379035824857
+      },
+      "candidate": {
+        "n": 951,
+        "correct": 813,
+        "accuracy": 0.8548895899053628,
+        "balanced_accuracy": 0.8549159663865546,
+        "macro_f1": 0.8548046626070949,
+        "confusion_matrix": [
+          [
+            395,
+            81
+          ],
+          [
+            57,
+            418
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.8738938053097345,
+            "recall": 0.8298319327731093,
+            "f1": 0.8512931034482759,
+            "support": 476
+          },
+          "NBC": {
+            "precision": 0.8376753507014028,
+            "recall": 0.88,
+            "f1": 0.8583162217659137,
+            "support": 475
+          }
+        },
+        "roc_auc": 0.9265634674922602
+      },
+      "delta_vs_previous_ci95": [
+        -0.006269592476489028,
+        0.014737230325550438
+      ]
+    },
+    "external_dev": {
+      "baseline": {
+        "n": 306,
+        "correct": 143,
+        "accuracy": 0.4673202614379085,
+        "balanced_accuracy": 0.4673202614379085,
+        "macro_f1": 0.42278182175880386,
+        "confusion_matrix": [
+          [
+            29,
+            124
+          ],
+          [
+            39,
+            114
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.4264705882352941,
+            "recall": 0.1895424836601307,
+            "f1": 0.26244343891402716,
+            "support": 153
+          },
+          "NBC": {
+            "precision": 0.4789915966386555,
+            "recall": 0.7450980392156863,
+            "f1": 0.5831202046035806,
+            "support": 153
+          }
+        },
+        "roc_auc": 0.4101413986073732
+      },
+      "previous": {
+        "n": 306,
+        "correct": 142,
+        "accuracy": 0.46405228758169936,
+        "balanced_accuracy": 0.46405228758169936,
+        "macro_f1": 0.4247329084322986,
+        "confusion_matrix": [
+          [
+            31,
+            122
+          ],
+          [
+            42,
+            111
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.4246575342465753,
+            "recall": 0.20261437908496732,
+            "f1": 0.2743362831858407,
+            "support": 153
+          },
+          "NBC": {
+            "precision": 0.47639484978540775,
+            "recall": 0.7254901960784313,
+            "f1": 0.5751295336787565,
+            "support": 153
+          }
+        },
+        "roc_auc": 0.4391046178820112
+      },
+      "candidate": {
+        "n": 306,
+        "correct": 142,
+        "accuracy": 0.46405228758169936,
+        "balanced_accuracy": 0.4640522875816993,
+        "macro_f1": 0.42258836524300436,
+        "confusion_matrix": [
+          [
+            30,
+            123
+          ],
+          [
+            41,
+            112
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.4225352112676056,
+            "recall": 0.19607843137254902,
+            "f1": 0.26785714285714285,
+            "support": 153
+          },
+          "NBC": {
+            "precision": 0.4765957446808511,
+            "recall": 0.7320261437908496,
+            "f1": 0.5773195876288659,
+            "support": 153
+          }
+        },
+        "roc_auc": 0.4289803067196377
+      },
+      "delta_vs_previous_ci95": [
+        -0.0196078431372549,
+        0.0196078431372549
+      ]
+    },
+    "paired_confirmation": {
+      "baseline": {
+        "n": 200,
+        "correct": 115,
+        "accuracy": 0.575,
+        "balanced_accuracy": 0.575,
+        "macro_f1": 0.5747342088805503,
+        "confusion_matrix": [
+          [
+            60,
+            40
+          ],
+          [
+            45,
+            55
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.5714285714285714,
+            "recall": 0.6,
+            "f1": 0.5853658536585366,
+            "support": 100
+          },
+          "NBC": {
+            "precision": 0.5789473684210527,
+            "recall": 0.55,
+            "f1": 0.5641025641025641,
+            "support": 100
+          }
+        },
+        "roc_auc": 0.6364
+      },
+      "previous": {
+        "n": 200,
+        "correct": 129,
+        "accuracy": 0.645,
+        "balanced_accuracy": 0.645,
+        "macro_f1": 0.6447779862414009,
+        "confusion_matrix": [
+          [
+            62,
+            38
+          ],
+          [
+            33,
+            67
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.6526315789473685,
+            "recall": 0.62,
+            "f1": 0.6358974358974359,
+            "support": 100
+          },
+          "NBC": {
+            "precision": 0.638095238095238,
+            "recall": 0.67,
+            "f1": 0.6536585365853659,
+            "support": 100
+          }
+        },
+        "roc_auc": 0.7047
+      },
+      "candidate": {
+        "n": 200,
+        "correct": 128,
+        "accuracy": 0.64,
+        "balanced_accuracy": 0.64,
+        "macro_f1": 0.6394230769230769,
+        "confusion_matrix": [
+          [
+            60,
+            40
+          ],
+          [
+            32,
+            68
+          ]
+        ],
+        "per_class": {
+          "FoxNews": {
+            "precision": 0.6521739130434783,
+            "recall": 0.6,
+            "f1": 0.625,
+            "support": 100
+          },
+          "NBC": {
+            "precision": 0.6296296296296297,
+            "recall": 0.68,
+            "f1": 0.6538461538461539,
+            "support": 100
+          }
+        },
+        "roc_auc": 0.6893000000000001
+      },
+      "delta_vs_previous_ci95": [
+        -0.04,
+        0.03
+      ]
+    }
+  },
+  "encoder_weights_unchanged": true,
+  "export_parity": true,
+  "original_models_unchanged": true,
+  "final_test_accessed": false,
+  "promoted": false,
+  "dataset_reads": [
+    "/path/to/local/Desktop/2026 Fall/CIS 5190/Final Project/baseline/data/val.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/data/external_dev_urls.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/paired_news_v4_2026-10-28/head_results/development_predictions.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/paired_news_v4_2026-10-28/paired_confirmation.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/paired_news_v4_2026-10-28/paired_train.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/training/training_metadata.csv"
+  ]
+}

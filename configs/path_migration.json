@@ -1,0 +1,301 @@
+{
+ "files": {
+  ".gitignore": {
+   "destination": ".gitignore"
+  },
+  "README.md": {
+   "destination": "README.md"
+  },
+  "README.zh-CN.md": {
+   "destination": "README.zh-CN.md"
+  },
+  "configs/environment.json": {
+   "destination": "configs/experiment_environment.json"
+  },
+  "configs/requirements-deploy.lock.txt": {
+   "destination": "configs/requirements-deploy.lock.txt"
+  },
+  "dataset_release/README.md": {
+   "destination": "data/dataset_card_template.md"
+  },
+  "legacy_review/01_Data_Collection_Cleaning_Analysis.ipynb": {
+   "destination": "01_Data_Collection_and_Cleaning.ipynb"
+  },
+  "legacy_review/02_Models_V1_to_V5.ipynb": {
+   "destination": "03_Model_Versions_and_Final_Evaluation.ipynb"
+  },
+  "legacy_review/03_Followup_Experiments.ipynb": {
+   "destination": "02_Historical_Experiments_and_Results.ipynb"
+  },
+  "legacy_review/evidence/results/collection.json": {
+   "destination": "experiments/historical/collection.json"
+  },
+  "legacy_review/evidence/results/factor_results.json": {
+   "destination": "experiments/historical/factor_results.json"
+  },
+  "legacy_review/evidence/results/feda_results.json": {
+   "destination": "experiments/historical/feda_results.json"
+  },
+  "legacy_review/evidence/results/latest_cpu.json": {
+   "destination": "experiments/historical/latest_cpu.json"
+  },
+  "legacy_review/evidence/results/latest_incomplete.json": {
+   "destination": "experiments/historical/latest_incomplete.json"
+  },
+  "legacy_review/evidence/results/latest_nested.json": {
+   "destination": "experiments/historical/latest_nested.json"
+  },
+  "legacy_review/evidence/results/latest_plan.json": {
+   "destination": "experiments/historical/latest_plan.json"
+  },
+  "legacy_review/evidence/results/latest_selection.json": {
+   "destination": "experiments/historical/latest_selection.json"
+  },
+  "legacy_review/evidence/results/latest_summary.json": {
+   "destination": "experiments/historical/latest_summary.json"
+  },
+  "legacy_review/evidence/results/new_audit.json": {
+   "destination": "experiments/historical/new_audit.json"
+  },
+  "legacy_review/evidence/results/new_cpu.json": {
+   "destination": "experiments/historical/new_cpu.json"
+  },
+  "legacy_review/evidence/results/new_folds.json": {
+   "destination": "experiments/historical/new_folds.json"
+  },
+  "legacy_review/evidence/results/new_plan.json": {
+   "destination": "experiments/historical/new_plan.json"
+  },
+  "legacy_review/evidence/results/new_results.json": {
+   "destination": "experiments/historical/new_results.json"
+  },
+  "legacy_review/evidence/results/new_selection.json": {
+   "destination": "experiments/historical/new_selection.json"
+  },
+  "legacy_review/evidence/results/original_split.json": {
+   "destination": "experiments/historical/original_split.json"
+  },
+  "legacy_review/evidence/results/paired_results.json": {
+   "destination": "experiments/historical/paired_results.json"
+  },
+  "legacy_review/evidence/results/style_summary.json": {
+   "destination": "experiments/historical/style_summary.json"
+  },
+  "legacy_review/evidence/results/v1_metrics.json": {
+   "destination": "experiments/historical/v1_metrics.json"
+  },
+  "legacy_review/evidence/results/v2_selection.json": {
+   "destination": "experiments/historical/v2_selection.json"
+  },
+  "legacy_review/evidence/results/v3_comparison.json": {
+   "destination": "experiments/historical/v3_comparison.json"
+  },
+  "legacy_review/evidence/results/v3_selection.json": {
+   "destination": "experiments/historical/v3_selection.json"
+  },
+  "legacy_review/evidence/results/v4_cpu.json": {
+   "destination": "experiments/historical/v4_cpu.json"
+  },
+  "legacy_review/evidence/results/v4_manifest.json": {
+   "destination": "experiments/historical/v4_manifest.json"
+  },
+  "legacy_review/evidence/results/v5_results.json": {
+   "destination": "experiments/historical/v5_results.json"
+  },
+  "legacy_review/evidence/results/v5_selection.json": {
+   "destination": "experiments/historical/v5_selection.json"
+  },
+  "legacy_review/evidence/results/weight_joint.json": {
+   "destination": "experiments/historical/weight_joint.json"
+  },
+  "legacy_review/evidence/results/weight_results.json": {
+   "destination": "experiments/historical/weight_results.json"
+  },
+  "03_Model_Versions_and_Final_Evaluation.ipynb": {
+   "destination": "03_Model_Versions_and_Final_Evaluation.ipynb"
+  },
+  "report/DragonThree_Report.pdf": {
+   "destination": "report/DragonThree_Report.pdf"
+  },
+  "report/DragonThree_Report.tex": {
+   "destination": "report/DragonThree_Report.tex"
+  },
+  "report/READ_ME.txt": {
+   "destination": "report/READ_ME.txt"
+  },
+  "report/figures/fixed_representations.png": {
+   "destination": "report/figures/fixed_representations.png"
+  },
+  "report/figures/locked_development.png": {
+   "destination": "report/figures/locked_development.png"
+  },
+  "report/figures/model_progression.pdf": {
+   "destination": "report/figures/model_progression.pdf"
+  },
+  "report/figures/model_progression.png": {
+   "destination": "report/figures/model_progression.png"
+  },
+  "report/figures/nested_group_intervals.png": {
+   "destination": "report/figures/nested_group_intervals.png"
+  },
+  "report/figures/publisher_length_slices.png": {
+   "destination": "report/figures/publisher_length_slices.png"
+  },
+  "report/figures/regularization_curves.png": {
+   "destination": "report/figures/regularization_curves.png"
+  },
+  "requirements.lock.txt": {
+   "destination": "requirements.lock.txt"
+  },
+  "runs/2026-11-21_base/E0/baseline_metrics.json": {
+   "destination": "experiments/New Experiments/E0/baseline_metrics.json"
+  },
+  "runs/2026-11-21_base/E0/data_audit.json": {
+   "destination": "experiments/New Experiments/E0/data_audit.json"
+  },
+  "runs/2026-11-21_base/E1/gates.json": {
+   "destination": "experiments/New Experiments/E1/gates.json"
+  },
+  "runs/2026-11-21_base/E1/locked_selection.json": {
+   "destination": "experiments/New Experiments/E1/locked_selection.json"
+  },
+  "runs/2026-11-21_base/E1/nested_results.json": {
+   "destination": "experiments/New Experiments/E1/nested_results.json"
+  },
+  "runs/2026-11-21_base/E1/summary.json": {
+   "destination": "experiments/New Experiments/E1/summary.json"
+  },
+  "runs/2026-11-21_base/E2/locked_specifications.json": {
+   "destination": "experiments/New Experiments/E2/locked_specifications.json"
+  },
+  "runs/2026-11-21_base/E2/results.json": {
+   "destination": "experiments/New Experiments/E2/results.json"
+  },
+  "runs/2026-11-21_base/E3/EXPERIMENT_RESULTS_EN.md": {
+   "destination": "experiments/New Experiments/E3/EXPERIMENT_RESULTS_EN.md"
+  },
+  "runs/2026-11-21_base/E3/EXPERIMENT_RESULTS_ZH.md": {
+   "destination": "experiments/New Experiments/E3/EXPERIMENT_RESULTS_ZH.md"
+  },
+  "runs/2026-11-21_base/E3/development_paired_intervals.json": {
+   "destination": "experiments/New Experiments/E3/development_paired_intervals.json"
+  },
+  "runs/2026-11-21_base/E3/error_transitions.json": {
+   "destination": "experiments/New Experiments/E3/error_transitions.json"
+  },
+  "runs/2026-11-21_base/E3/experiment_table.json": {
+   "destination": "experiments/New Experiments/E3/experiment_table.json"
+  },
+  "runs/2026-11-21_base/E3/publisher_length_slices.csv": {
+   "destination": "experiments/New Experiments/E3/publisher_length_slices.csv"
+  },
+  "runs/2026-11-21_base/E3/results.json": {
+   "destination": "experiments/New Experiments/E3/results.json"
+  },
+  "runs/2026-11-21_base/E3/results_master.json": {
+   "destination": "experiments/New Experiments/E3/results_master.json"
+  },
+  "runs/2026-11-21_base/E4/gate_decision.json": {
+   "destination": "experiments/New Experiments/E4/gate_decision.json"
+  },
+  "runs/2026-11-21_base/E5/final_decision.json": {
+   "destination": "experiments/New Experiments/E5/final_decision.json"
+  },
+  "runs/2026-11-21_base/E6/interface_checks.json": {
+   "destination": "experiments/New Experiments/E6/interface_checks.json"
+  },
+  "runs/2026-11-21_base/E6/runtime.json": {
+   "destination": "experiments/New Experiments/E6/runtime.json"
+  },
+  "scripts/run_budgeted.py": {
+   "destination": "scripts/run_budgeted.py"
+  },
+  "scripts/worker_bootstrap.py": {
+   "destination": "scripts/worker_bootstrap.py"
+  },
+  "setup.sh": {
+   "destination": "setup.sh"
+  },
+  "src/dragonthree/analyze_results.py": {
+   "destination": "src/dragonthree/analyze_results.py"
+  },
+  "src/dragonthree/audit_and_baseline.py": {
+   "destination": "src/dragonthree/audit_and_baseline.py"
+  },
+  "src/dragonthree/continue_v3.py": {
+   "destination": "src/dragonthree/e1_validation.py"
+  },
+  "src/dragonthree/freeze_and_benchmark.py": {
+   "destination": "src/dragonthree/v4_release_checks.py"
+  },
+  "src/dragonthree/lexical_model.py": {
+   "destination": "src/dragonthree/lexical_model.py"
+  },
+  "src/dragonthree/locked_export.py": {
+   "destination": "src/dragonthree/e2_locked_eval.py"
+  },
+  "src/dragonthree/v3_protocol.py": {
+   "destination": "src/dragonthree/v3_validation.py"
+  },
+  "experiments/approved_2026-11-21/E5/final_decision.json": {
+   "destination": "experiments/New Experiments/E5/final_decision.json"
+  },
+  "experiments/approved_2026-11-21/E2/locked_specifications.json": {
+   "destination": "experiments/New Experiments/E2/locked_specifications.json"
+  },
+  "experiments/approved_2026-11-21/E2/results.json": {
+   "destination": "experiments/New Experiments/E2/results.json"
+  },
+  "experiments/approved_2026-11-21/E3/EXPERIMENT_RESULTS_EN.md": {
+   "destination": "experiments/New Experiments/E3/EXPERIMENT_RESULTS_EN.md"
+  },
+  "experiments/approved_2026-11-21/E3/EXPERIMENT_RESULTS_ZH.md": {
+   "destination": "experiments/New Experiments/E3/EXPERIMENT_RESULTS_ZH.md"
+  },
+  "experiments/approved_2026-11-21/E3/error_transitions.json": {
+   "destination": "experiments/New Experiments/E3/error_transitions.json"
+  },
+  "experiments/approved_2026-11-21/E3/results.json": {
+   "destination": "experiments/New Experiments/E3/results.json"
+  },
+  "experiments/approved_2026-11-21/E3/development_paired_intervals.json": {
+   "destination": "experiments/New Experiments/E3/development_paired_intervals.json"
+  },
+  "experiments/approved_2026-11-21/E3/results_master.json": {
+   "destination": "experiments/New Experiments/E3/results_master.json"
+  },
+  "experiments/approved_2026-11-21/E3/experiment_table.json": {
+   "destination": "experiments/New Experiments/E3/experiment_table.json"
+  },
+  "experiments/approved_2026-11-21/E3/publisher_length_slices.csv": {
+   "destination": "experiments/New Experiments/E3/publisher_length_slices.csv"
+  },
+  "experiments/approved_2026-11-21/E4/gate_decision.json": {
+   "destination": "experiments/New Experiments/E4/gate_decision.json"
+  },
+  "experiments/approved_2026-11-21/E1/summary.json": {
+   "destination": "experiments/New Experiments/E1/summary.json"
+  },
+  "experiments/approved_2026-11-21/E1/nested_results.json": {
+   "destination": "experiments/New Experiments/E1/nested_results.json"
+  },
+  "experiments/approved_2026-11-21/E1/locked_selection.json": {
+   "destination": "experiments/New Experiments/E1/locked_selection.json"
+  },
+  "experiments/approved_2026-11-21/E1/gates.json": {
+   "destination": "experiments/New Experiments/E1/gates.json"
+  },
+  "experiments/approved_2026-11-21/E6/runtime.json": {
+   "destination": "experiments/New Experiments/E6/runtime.json"
+  },
+  "experiments/approved_2026-11-21/E6/interface_checks.json": {
+   "destination": "experiments/New Experiments/E6/interface_checks.json"
+  },
+  "experiments/approved_2026-11-21/E0/baseline_metrics.json": {
+   "destination": "experiments/New Experiments/E0/baseline_metrics.json"
+  },
+  "experiments/approved_2026-11-21/E0/data_audit.json": {
+   "destination": "experiments/New Experiments/E0/data_audit.json"
+  }
+ }
+}

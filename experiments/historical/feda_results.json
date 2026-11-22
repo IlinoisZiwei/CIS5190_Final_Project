@@ -1,0 +1,540 @@
+{
+  "selected": {
+    "feda": {
+      "name": "feda_all_a1_w0.1",
+      "architecture": "feda",
+      "selection": "all",
+      "fraction": 1.0,
+      "weight": 0.1,
+      "domain_scale": 1.0,
+      "course_mean": 0.7860589812332439,
+      "course_by_seed": [
+        0.789544235924933,
+        0.789544235924933,
+        0.779088471849866
+      ],
+      "course_delta_by_seed": [
+        -0.00536193029490617,
+        -0.004557640750670222,
+        -0.0061662198391421175
+      ],
+      "course_delta_mean": -0.00536193029490617,
+      "course_paired_group_delta_95": [
+        -0.009373388965165562,
+        -0.0015232770276126261
+      ],
+      "external_mean": 0.49702000851426137,
+      "uncertainty_note": "Bootstrap over existing groups after averaging repeated OOF predictions; does not make repeated folds independent or establish performance on a new dataset."
+    },
+    "selection": {
+      "name": "feda_matched_q0.25_w1",
+      "architecture": "feda",
+      "selection": "matched",
+      "fraction": 0.25,
+      "weight": 1.0,
+      "domain_scale": 2.0,
+      "course_mean": 0.7877569258266309,
+      "course_by_seed": [
+        0.7932975871313673,
+        0.7890080428954424,
+        0.7809651474530831
+      ],
+      "course_delta_by_seed": [
+        -0.0016085790884717843,
+        -0.005093833780160817,
+        -0.00428954423592498
+      ],
+      "course_delta_mean": -0.0036639857015191937,
+      "course_paired_group_delta_95": [
+        -0.005904534455531514,
+        -0.001429455268369863
+      ],
+      "external_mean": 0.4563644103873989,
+      "uncertainty_note": "Bootstrap over existing groups after averaging repeated OOF predictions; does not make repeated folds independent or establish performance on a new dataset.",
+      "matched_random_control": "feda_random_q0.25_w1",
+      "gain_vs_random_control": 0.000983020554066183
+    }
+  },
+  "nested_family_results": {
+    "feda": {
+      "course_mean": 0.7914209115281501,
+      "course_by_seed": [
+        0.7949061662198391,
+        0.7941018766756032,
+        0.7852546916890081
+      ],
+      "course_delta_by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "course_delta_mean": 0.0,
+      "course_paired_group_delta_95": [
+        0.0,
+        0.0
+      ],
+      "external_mean": 0.45253299276287784,
+      "uncertainty_note": "Bootstrap over existing groups after averaging repeated OOF predictions; does not make repeated folds independent or establish performance on a new dataset.",
+      "promotion_gate_passed": false
+    },
+    "selection": {
+      "course_mean": 0.7911528150134048,
+      "course_by_seed": [
+        0.7949061662198391,
+        0.7941018766756032,
+        0.7844504021447721
+      ],
+      "course_delta_by_seed": [
+        0.0,
+        0.0,
+        -0.0008042895442359477
+      ],
+      "course_delta_mean": -0.0002680965147453159,
+      "course_paired_group_delta_95": [
+        -0.0007162730535008789,
+        0.00017877893984088674
+      ],
+      "external_mean": 0.45189442315879097,
+      "uncertainty_note": "Bootstrap over existing groups after averaging repeated OOF predictions; does not make repeated folds independent or establish performance on a new dataset.",
+      "promotion_gate_passed": false
+    }
+  },
+  "development": [
+    {
+      "name": "course_only",
+      "training_course_n": 3730,
+      "training_external_n": 0,
+      "external_weight_sum": 0.0,
+      "metrics": {
+        "course_dev": {
+          "n": 951,
+          "correct": 772,
+          "accuracy": 0.8117770767613038,
+          "balanced_accuracy": 0.8117425917735515,
+          "macro_f1": 0.811563721458483,
+          "confusion_matrix": [
+            [
+              402,
+              74
+            ],
+            [
+              105,
+              370
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.7928994082840237,
+              "recall": 0.8445378151260504,
+              "f1": 0.8179043743641913,
+              "support": 476
+            },
+            "NBC": {
+              "precision": 0.8333333333333334,
+              "recall": 0.7789473684210526,
+              "f1": 0.8052230685527747,
+              "support": 475
+            }
+          },
+          "roc_auc": 0.8873197700132683
+        },
+        "external_dev": {
+          "n": 306,
+          "correct": 129,
+          "accuracy": 0.4215686274509804,
+          "balanced_accuracy": 0.4215686274509804,
+          "macro_f1": 0.4155705422174265,
+          "confusion_matrix": [
+            [
+              49,
+              104
+            ],
+            [
+              73,
+              80
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.4016393442622951,
+              "recall": 0.3202614379084967,
+              "f1": 0.3563636363636364,
+              "support": 153
+            },
+            "NBC": {
+              "precision": 0.43478260869565216,
+              "recall": 0.5228758169934641,
+              "f1": 0.47477744807121663,
+              "support": 153
+            }
+          },
+          "roc_auc": 0.4104831475073689
+        }
+      },
+      "checkpoint_bytes": 2251831,
+      "official_evaluator": {
+        "accuracy": 0.8117770767613038,
+        "avg_infer_ms": 0.05454859200492403,
+        "total_infer_s": 0.051875710996682756,
+        "batch_size": 32
+      },
+      "export_parity": "PASS"
+    },
+    {
+      "name": "feda_all_a1_w0.1",
+      "training_course_n": 3730,
+      "training_external_n": 1566,
+      "external_weight_sum": 156.6,
+      "metrics": {
+        "course_dev": {
+          "n": 951,
+          "correct": 766,
+          "accuracy": 0.8054679284963197,
+          "balanced_accuracy": 0.8054290137107474,
+          "macro_f1": 0.8051887654259471,
+          "confusion_matrix": [
+            [
+              401,
+              75
+            ],
+            [
+              110,
+              365
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.7847358121330724,
+              "recall": 0.842436974789916,
+              "f1": 0.8125633232016211,
+              "support": 476
+            },
+            "NBC": {
+              "precision": 0.8295454545454546,
+              "recall": 0.7684210526315789,
+              "f1": 0.7978142076502732,
+              "support": 475
+            }
+          },
+          "roc_auc": 0.882436974789916
+        },
+        "external_dev": {
+          "n": 306,
+          "correct": 137,
+          "accuracy": 0.4477124183006536,
+          "balanced_accuracy": 0.44771241830065356,
+          "macro_f1": 0.4433788627337014,
+          "confusion_matrix": [
+            [
+              55,
+              98
+            ],
+            [
+              71,
+              82
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.4365079365079365,
+              "recall": 0.35947712418300654,
+              "f1": 0.3942652329749104,
+              "support": 153
+            },
+            "NBC": {
+              "precision": 0.45555555555555555,
+              "recall": 0.5359477124183006,
+              "f1": 0.4924924924924925,
+              "support": 153
+            }
+          },
+          "roc_auc": 0.4917339484813533
+        }
+      },
+      "checkpoint_bytes": 2251831,
+      "official_evaluator": {
+        "accuracy": 0.8054679284963197,
+        "avg_infer_ms": 0.05520193584615386,
+        "total_infer_s": 0.05249704098969232,
+        "batch_size": 32
+      },
+      "export_parity": "PASS"
+    },
+    {
+      "name": "feda_matched_q0.25_w1",
+      "training_course_n": 3730,
+      "training_external_n": 392,
+      "external_weight_sum": 392.0,
+      "metrics": {
+        "course_dev": {
+          "n": 951,
+          "correct": 766,
+          "accuracy": 0.8054679284963197,
+          "balanced_accuracy": 0.8054334365325078,
+          "macro_f1": 0.8052474216191026,
+          "confusion_matrix": [
+            [
+              399,
+              77
+            ],
+            [
+              108,
+              367
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.7869822485207101,
+              "recall": 0.8382352941176471,
+              "f1": 0.8118006103763988,
+              "support": 476
+            },
+            "NBC": {
+              "precision": 0.8265765765765766,
+              "recall": 0.7726315789473684,
+              "f1": 0.7986942328618063,
+              "support": 475
+            }
+          },
+          "roc_auc": 0.8847058823529412
+        },
+        "external_dev": {
+          "n": 306,
+          "correct": 130,
+          "accuracy": 0.42483660130718953,
+          "balanced_accuracy": 0.4248366013071896,
+          "macro_f1": 0.4192546583850931,
+          "confusion_matrix": [
+            [
+              50,
+              103
+            ],
+            [
+              73,
+              80
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.4065040650406504,
+              "recall": 0.32679738562091504,
+              "f1": 0.36231884057971014,
+              "support": 153
+            },
+            "NBC": {
+              "precision": 0.4371584699453552,
+              "recall": 0.5228758169934641,
+              "f1": 0.47619047619047616,
+              "support": 153
+            }
+          },
+          "roc_auc": 0.4114229569823572
+        }
+      },
+      "checkpoint_bytes": 2251831,
+      "official_evaluator": {
+        "accuracy": 0.8054679284963197,
+        "avg_infer_ms": 0.05884165820527575,
+        "total_infer_s": 0.05595841695321724,
+        "batch_size": 32
+      },
+      "export_parity": "PASS"
+    },
+    {
+      "name": "feda_random_q0.25_w1",
+      "training_course_n": 3730,
+      "training_external_n": 392,
+      "external_weight_sum": 392.0,
+      "metrics": {
+        "course_dev": {
+          "n": 951,
+          "correct": 765,
+          "accuracy": 0.804416403785489,
+          "balanced_accuracy": 0.8043808049535603,
+          "macro_f1": 0.8041806153355652,
+          "confusion_matrix": [
+            [
+              399,
+              77
+            ],
+            [
+              109,
+              366
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.7854330708661418,
+              "recall": 0.8382352941176471,
+              "f1": 0.8109756097560976,
+              "support": 476
+            },
+            "NBC": {
+              "precision": 0.8261851015801355,
+              "recall": 0.7705263157894737,
+              "f1": 0.7973856209150327,
+              "support": 475
+            }
+          },
+          "roc_auc": 0.881733746130031
+        },
+        "external_dev": {
+          "n": 306,
+          "correct": 130,
+          "accuracy": 0.42483660130718953,
+          "balanced_accuracy": 0.42483660130718953,
+          "macro_f1": 0.42065404475043033,
+          "confusion_matrix": [
+            [
+              52,
+              101
+            ],
+            [
+              75,
+              78
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.4094488188976378,
+              "recall": 0.33986928104575165,
+              "f1": 0.37142857142857144,
+              "support": 153
+            },
+            "NBC": {
+              "precision": 0.43575418994413406,
+              "recall": 0.5098039215686274,
+              "f1": 0.46987951807228917,
+              "support": 153
+            }
+          },
+          "roc_auc": 0.41932590029475836
+        }
+      },
+      "checkpoint_bytes": 2251831,
+      "official_evaluator": {
+        "accuracy": 0.804416403785489,
+        "avg_infer_ms": 0.05843231022861305,
+        "total_infer_s": 0.055569127027411014,
+        "batch_size": 32
+      },
+      "export_parity": "PASS"
+    },
+    {
+      "name": "feda_all_a2_w1",
+      "training_course_n": 3730,
+      "training_external_n": 1566,
+      "external_weight_sum": 1566.0,
+      "metrics": {
+        "course_dev": {
+          "n": 951,
+          "correct": 766,
+          "accuracy": 0.8054679284963197,
+          "balanced_accuracy": 0.8054334365325078,
+          "macro_f1": 0.8052474216191026,
+          "confusion_matrix": [
+            [
+              399,
+              77
+            ],
+            [
+              108,
+              367
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.7869822485207101,
+              "recall": 0.8382352941176471,
+              "f1": 0.8118006103763988,
+              "support": 476
+            },
+            "NBC": {
+              "precision": 0.8265765765765766,
+              "recall": 0.7726315789473684,
+              "f1": 0.7986942328618063,
+              "support": 475
+            }
+          },
+          "roc_auc": 0.8809862892525432
+        },
+        "external_dev": {
+          "n": 306,
+          "correct": 136,
+          "accuracy": 0.4444444444444444,
+          "balanced_accuracy": 0.4444444444444444,
+          "macro_f1": 0.4390527950310559,
+          "confusion_matrix": [
+            [
+              53,
+              100
+            ],
+            [
+              70,
+              83
+            ]
+          ],
+          "per_class": {
+            "FoxNews": {
+              "precision": 0.43089430894308944,
+              "recall": 0.3464052287581699,
+              "f1": 0.38405797101449274,
+              "support": 153
+            },
+            "NBC": {
+              "precision": 0.453551912568306,
+              "recall": 0.5424836601307189,
+              "f1": 0.49404761904761907,
+              "support": 153
+            }
+          },
+          "roc_auc": 0.4471784356444103
+        }
+      },
+      "checkpoint_bytes": 2251831,
+      "official_evaluator": {
+        "accuracy": 0.8054679284963197,
+        "avg_infer_ms": 0.054293462670467925,
+        "total_infer_s": 0.051633082999615,
+        "batch_size": 32
+      },
+      "export_parity": "PASS"
+    }
+  ],
+  "promotion": {
+    "feda": {
+      "nested_cv_gate_passed": false,
+      "development_gate_passed": false,
+      "apply_to_v4": false
+    },
+    "selection": {
+      "nested_cv_gate_passed": false,
+      "development_gate_passed": false,
+      "apply_to_v4": false
+    }
+  },
+  "original_v3_v4_files_unchanged": true,
+  "final_holdout_open_count": 0,
+  "mixed_metadata_open_count": 0,
+  "stage_cpu_seconds": {
+    "nested_cv_cpu_seconds": 94.69844599999999,
+    "full_refit_export_development_cpu_seconds": 3.2778840000000002
+  },
+  "process_cpu_seconds": 100.932248,
+  "wall_seconds": 101.42834066599607,
+  "csv_files_opened": [
+    "/path/to/local/Desktop/2026 Fall/CIS 5190/Final Project/baseline/data/val.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/data/external_dev_urls.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/feda_selection_2026-10-27/cv_fold_results.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/feda_selection_2026-10-27/cv_results.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/training/cleaned_augmented_train_urls.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/training/training_metadata.csv",
+    "/path/to/CIS5190",
+    "/path/to/CIS5190",
+    "/path/to/CIS5190",
+    "/path/to/CIS5190",
+    "/path/to/CIS5190"
+  ],
+  "new_leaderboard_score": null,
+  "all_fit_converged": true
+}

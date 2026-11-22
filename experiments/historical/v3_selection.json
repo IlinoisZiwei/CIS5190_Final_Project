@@ -1,0 +1,434 @@
+{
+  "protocol": "Grouped 3-fold OOF predictions on original training split. Recipes and thresholds selected here; local validation is not used.",
+  "train_rows": 3849,
+  "train_sha256": "038e59245fd71d0da7601ba8e2207f08766f0c81fa2d8961f2f18048217e1e07",
+  "base_candidates": [
+    {
+      "name": "v2",
+      "blocks": [
+        "word12",
+        "wb35"
+      ],
+      "C": 4.0,
+      "kind": "svm"
+    },
+    {
+      "name": "crossword_c1",
+      "blocks": [
+        "word12",
+        "char36"
+      ],
+      "C": 1.0,
+      "kind": "svm"
+    },
+    {
+      "name": "crossword_c4",
+      "blocks": [
+        "word12",
+        "char36"
+      ],
+      "C": 4.0,
+      "kind": "svm"
+    },
+    {
+      "name": "crossword_c10",
+      "blocks": [
+        "word12",
+        "char36"
+      ],
+      "C": 10.0,
+      "kind": "svm"
+    },
+    {
+      "name": "short_char",
+      "blocks": [
+        "word12",
+        "char25"
+      ],
+      "C": 4.0,
+      "kind": "svm"
+    },
+    {
+      "name": "trigrams",
+      "blocks": [
+        "word13",
+        "char36"
+      ],
+      "C": 4.0,
+      "kind": "svm"
+    },
+    {
+      "name": "all_three",
+      "blocks": [
+        "word12",
+        "char36",
+        "wb35"
+      ],
+      "C": 1.0,
+      "kind": "svm"
+    },
+    {
+      "name": "char_weight2",
+      "blocks": [
+        "word12",
+        "char36"
+      ],
+      "factors": [
+        1.0,
+        2.0
+      ],
+      "C": 4.0,
+      "kind": "svm"
+    },
+    {
+      "name": "word_weight2",
+      "blocks": [
+        "word12",
+        "char36"
+      ],
+      "factors": [
+        2.0,
+        1.0
+      ],
+      "C": 4.0,
+      "kind": "svm"
+    },
+    {
+      "name": "crossword_logistic",
+      "blocks": [
+        "word12",
+        "char36"
+      ],
+      "C": 8.0,
+      "kind": "logistic"
+    },
+    {
+      "name": "min_df2",
+      "blocks": [
+        "word12df2",
+        "char36"
+      ],
+      "C": 2.0,
+      "kind": "svm"
+    },
+    {
+      "name": "nb_word",
+      "blocks": [
+        "word_binary"
+      ],
+      "C": 1.0,
+      "kind": "nb_svm"
+    },
+    {
+      "name": "nb_tfidf",
+      "blocks": [
+        "word12",
+        "char36"
+      ],
+      "C": 4.0,
+      "kind": "nb_svm"
+    }
+  ],
+  "feature_blocks": {
+    "word12": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 1
+    },
+    "word12df2": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2
+    },
+    "word13": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1
+    },
+    "wb35": {
+      "analyzer": "char_wb",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 120000
+    },
+    "char36": {
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        6
+      ],
+      "min_df": 2,
+      "max_features": 160000
+    },
+    "char25": {
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 120000
+    },
+    "word_binary": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 1,
+      "binary": true,
+      "use_idf": false,
+      "norm": null,
+      "sublinear_tf": false
+    }
+  },
+  "ranking": [
+    {
+      "name": "short_char",
+      "members": [
+        "short_char"
+      ],
+      "cv_accuracy": 0.8077422707196674,
+      "threshold": -0.05,
+      "uncalibrated_cv_accuracy": 0.8046245778124188,
+      "scales": {
+        "short_char": 0.776760627876633
+      }
+    },
+    {
+      "name": "top2_average",
+      "members": [
+        "short_char",
+        "trigrams"
+      ],
+      "cv_accuracy": 0.807222655235126,
+      "threshold": -0.15,
+      "uncalibrated_cv_accuracy": 0.8009872694206287,
+      "scales": {
+        "short_char": 0.776760627876633,
+        "trigrams": 0.7344258367188092
+      }
+    },
+    {
+      "name": "crossword_c1",
+      "members": [
+        "crossword_c1"
+      ],
+      "cv_accuracy": 0.8056638087815017,
+      "threshold": -0.15,
+      "uncalibrated_cv_accuracy": 0.7978695765133801,
+      "scales": {
+        "crossword_c1": 0.6910120898020319
+      }
+    },
+    {
+      "name": "top5_average",
+      "members": [
+        "short_char",
+        "trigrams",
+        "v2",
+        "crossword_c1",
+        "crossword_logistic"
+      ],
+      "cv_accuracy": 0.8056638087815017,
+      "threshold": -0.1,
+      "uncalibrated_cv_accuracy": 0.7960509223174851,
+      "scales": {
+        "short_char": 0.776760627876633,
+        "trigrams": 0.7344258367188092,
+        "v2": 0.8141704706035153,
+        "crossword_c1": 0.6910120898020319,
+        "crossword_logistic": 2.1582206690263144
+      }
+    },
+    {
+      "name": "crossword_logistic",
+      "members": [
+        "crossword_logistic"
+      ],
+      "cv_accuracy": 0.8051441932969603,
+      "threshold": -0.1,
+      "uncalibrated_cv_accuracy": 0.7976097687711093,
+      "scales": {
+        "crossword_logistic": 2.1582206690263144
+      }
+    },
+    {
+      "name": "trigrams",
+      "members": [
+        "trigrams"
+      ],
+      "cv_accuracy": 0.8048843855546896,
+      "threshold": -0.15,
+      "uncalibrated_cv_accuracy": 0.8004676539360873,
+      "scales": {
+        "trigrams": 0.7344258367188092
+      }
+    },
+    {
+      "name": "diverse_average",
+      "members": [
+        "crossword_c4",
+        "crossword_logistic",
+        "nb_word"
+      ],
+      "cv_accuracy": 0.8038451545856067,
+      "threshold": -0.05,
+      "uncalibrated_cv_accuracy": 0.798908807482463,
+      "scales": {
+        "crossword_c4": 0.7551091368571875,
+        "crossword_logistic": 2.1582206690263144,
+        "nb_word": 0.8308635968086496
+      }
+    },
+    {
+      "name": "top3_average",
+      "members": [
+        "short_char",
+        "trigrams",
+        "v2"
+      ],
+      "cv_accuracy": 0.8035853468433359,
+      "threshold": -0.15,
+      "uncalibrated_cv_accuracy": 0.8002078461938166,
+      "scales": {
+        "short_char": 0.776760627876633,
+        "trigrams": 0.7344258367188092,
+        "v2": 0.8141704706035153
+      }
+    },
+    {
+      "name": "crossword_c4",
+      "members": [
+        "crossword_c4"
+      ],
+      "cv_accuracy": 0.8028059236165238,
+      "threshold": -0.1,
+      "uncalibrated_cv_accuracy": 0.7965705378020265,
+      "scales": {
+        "crossword_c4": 0.7551091368571875
+      }
+    },
+    {
+      "name": "crossword_c10",
+      "members": [
+        "crossword_c10"
+      ],
+      "cv_accuracy": 0.8025461158742531,
+      "threshold": -0.1,
+      "uncalibrated_cv_accuracy": 0.7952714990906729,
+      "scales": {
+        "crossword_c10": 0.771323849761718
+      }
+    },
+    {
+      "name": "word_weight2",
+      "members": [
+        "word_weight2"
+      ],
+      "cv_accuracy": 0.7991686152247337,
+      "threshold": -0.1,
+      "uncalibrated_cv_accuracy": 0.797090153286568,
+      "scales": {
+        "word_weight2": 0.7879310896502593
+      }
+    },
+    {
+      "name": "v2",
+      "members": [
+        "v2"
+      ],
+      "cv_accuracy": 0.798908807482463,
+      "threshold": -0.0,
+      "uncalibrated_cv_accuracy": 0.798908807482463,
+      "scales": {
+        "v2": 0.8141704706035153
+      }
+    },
+    {
+      "name": "all_three",
+      "members": [
+        "all_three"
+      ],
+      "cv_accuracy": 0.7973499610288387,
+      "threshold": -0.05,
+      "uncalibrated_cv_accuracy": 0.79423226812159,
+      "scales": {
+        "all_three": 0.7430489503919208
+      }
+    },
+    {
+      "name": "nb_tfidf",
+      "members": [
+        "nb_tfidf"
+      ],
+      "cv_accuracy": 0.7947518836061315,
+      "threshold": -0.1,
+      "uncalibrated_cv_accuracy": 0.7918939984411536,
+      "scales": {
+        "nb_tfidf": 0.9872607559341675
+      }
+    },
+    {
+      "name": "char_weight2",
+      "members": [
+        "char_weight2"
+      ],
+      "cv_accuracy": 0.792413613925695,
+      "threshold": -0.1,
+      "uncalibrated_cv_accuracy": 0.7892959210184464,
+      "scales": {
+        "char_weight2": 0.7812214285917544
+      }
+    },
+    {
+      "name": "min_df2",
+      "members": [
+        "min_df2"
+      ],
+      "cv_accuracy": 0.7874772668225513,
+      "threshold": -0.05,
+      "uncalibrated_cv_accuracy": 0.7820213042348662,
+      "scales": {
+        "min_df2": 0.8263894932682248
+      }
+    },
+    {
+      "name": "nb_word",
+      "members": [
+        "nb_word"
+      ],
+      "cv_accuracy": 0.7804624577812419,
+      "threshold": 0.05,
+      "uncalibrated_cv_accuracy": 0.7789036113276175,
+      "scales": {
+        "nb_word": 0.8308635968086496
+      }
+    }
+  ],
+  "selected_recipe": {
+    "name": "short_char",
+    "members": [
+      "short_char"
+    ],
+    "cv_accuracy": 0.8077422707196674,
+    "threshold": -0.05,
+    "uncalibrated_cv_accuracy": 0.8046245778124188,
+    "scales": {
+      "short_char": 0.776760627876633
+    }
+  },
+  "validation_used_for_selection": false
+}

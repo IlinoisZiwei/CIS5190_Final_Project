@@ -1,0 +1,58 @@
+{
+  "team": "DragonThree",
+  "version": 3,
+  "training_rows": 3849,
+  "validation_rows": 951,
+  "original_baseline_accuracy": 0.7623554153522608,
+  "v2_accuracy": 0.7949526813880127,
+  "v3_accuracy": 0.814931650893796,
+  "v3_correct": 775,
+  "gain_vs_v2_percentage_points": 1.9978969505783373,
+  "gain_vs_original_percentage_points": 5.257623554153524,
+  "corrected_v2_errors": 37,
+  "new_v3_errors": 18,
+  "confusion_matrix_labels": [
+    "FoxNews",
+    "NBC"
+  ],
+  "confusion_matrix_rows_actual_columns_predicted": [
+    [
+      403,
+      73
+    ],
+    [
+      103,
+      372
+    ]
+  ],
+  "prediction_seconds": 0.04718541700276546,
+  "export_max_score_difference": 4.440892098500626e-15,
+  "selected_recipe": {
+    "name": "short_char",
+    "members": [
+      "short_char"
+    ],
+    "cv_accuracy": 0.8077422707196674,
+    "threshold": -0.05,
+    "uncalibrated_cv_accuracy": 0.8046245778124188,
+    "scales": {
+      "short_char": 0.776760627876633
+    }
+  },
+  "feature_layout": [
+    {
+      "metadata_bytes": 512296,
+      "features": 36034
+    },
+    {
+      "metadata_bytes": 370002,
+      "features": 49525
+    }
+  ],
+  "train_sha256": "038e59245fd71d0da7601ba8e2207f08766f0c81fa2d8961f2f18048217e1e07",
+  "validation_sha256": "4d12ef27eaa80a7e1c31d35269f95c9721464b2f13fab34e1dcf92eca895b512",
+  "torch_version": "2.9.1",
+  "sklearn_version": "1.9.1",
+  "scope": "Same development validation set used in prior versions. Candidate/threshold selection used grouped training-only OOF predictions. This is not a new leaderboard score.",
+  "new_leaderboard_accuracy": null
+}

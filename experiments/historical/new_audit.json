@@ -1,0 +1,162 @@
+{
+  "total_rows": 8096,
+  "new_rows": 2000,
+  "topic_sample_reviewed": 103,
+  "topic_changed": 27,
+  "event_pairs_reviewed": 15,
+  "original_multirow_groups_reviewed": 18,
+  "total_groups": 7557,
+  "new_groups": 1910,
+  "largest_groups": [
+    [
+      "audit-153",
+      55
+    ],
+    [
+      "audit-6582",
+      18
+    ],
+    [
+      "audit-6600",
+      10
+    ],
+    [
+      "audit-6116",
+      4
+    ],
+    [
+      "audit-6674",
+      4
+    ],
+    [
+      "audit-4411",
+      3
+    ],
+    [
+      "audit-5644",
+      3
+    ],
+    [
+      "audit-6366",
+      3
+    ],
+    [
+      "audit-406",
+      2
+    ],
+    [
+      "audit-557",
+      2
+    ]
+  ],
+  "grouping_families": {
+    "weekly_picture_template": 55,
+    "lottery_numbers_template": 3,
+    "named_storm_hilary": 4,
+    "named_storm_ian": 18,
+    "named_storm_helene": 10,
+    "named_storm_melissa": 4,
+    "named_storm_debby": 2,
+    "named_storm_fiona": 2,
+    "archives_template": 2,
+    "named_storm_erin": 2
+  },
+  "matching": [
+    {
+      "direction": "short_le5",
+      "label": 0,
+      "n": 219,
+      "mean_matching_cost": 0.5150692117399794
+    },
+    {
+      "direction": "short_le5",
+      "label": 1,
+      "n": 333,
+      "mean_matching_cost": 0.6294301424506101
+    },
+    {
+      "direction": "video",
+      "label": 1,
+      "n": 206,
+      "mean_matching_cost": 0.26456376756317407
+    },
+    {
+      "direction": "shopping",
+      "label": 0,
+      "n": 93,
+      "mean_matching_cost": 0.5188178955428125
+    },
+    {
+      "direction": "shopping",
+      "label": 1,
+      "n": 192,
+      "mean_matching_cost": 0.4617194515489073
+    },
+    {
+      "direction": "live",
+      "label": 0,
+      "n": 95,
+      "mean_matching_cost": 0.33684320115591354
+    },
+    {
+      "direction": "live",
+      "label": 1,
+      "n": 84,
+      "mean_matching_cost": 0.27738328536743917
+    },
+    {
+      "direction": "gallery",
+      "label": 0,
+      "n": 5,
+      "mean_matching_cost": 0.4700039984031917
+    },
+    {
+      "direction": "gallery",
+      "label": 1,
+      "n": 92,
+      "mean_matching_cost": 0.4809789897917341
+    },
+    {
+      "direction": "business",
+      "label": 0,
+      "n": 175,
+      "mean_matching_cost": 0.004000313636364256
+    },
+    {
+      "direction": "business",
+      "label": 1,
+      "n": 178,
+      "mean_matching_cost": 0.021911014072007674
+    },
+    {
+      "direction": "weather",
+      "label": 0,
+      "n": 175,
+      "mean_matching_cost": 0.008000412231837001
+    },
+    {
+      "direction": "weather",
+      "label": 1,
+      "n": 231,
+      "mean_matching_cost": 0.0030313469855248664
+    },
+    {
+      "direction": "years_2022_2023",
+      "label": 0,
+      "n": 430,
+      "mean_matching_cost": 0.3534888309873231
+    },
+    {
+      "direction": "years_2022_2023",
+      "label": 1,
+      "n": 362,
+      "mean_matching_cost": 0.12845374837307147
+    }
+  ],
+  "final_test_accessed": false,
+  "reads": [
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/data_supplement_2026-10-29/new_training_candidates.jsonl",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/experiments/paired_news_v4_2026-10-28/paired_train.csv",
+    "/path/to/CIS5190/DragonThree_quality_pipeline/training/training_metadata.csv"
+  ]
+}

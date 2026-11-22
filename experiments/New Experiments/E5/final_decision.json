@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "stage": "E5",
+  "decision": "retain_original_v4_submission",
+  "reason": "E4 was conditionally authorized but was not started because the locked augmented model failed the course development protection gates. The original V4 remains the approved fallback.",
+  "training_rows": 4800,
+  "training_includes_course_development": true,
+  "independent_course_dev_accuracy_for_submission": null,
+  "validated_sibling_course_dev": {
+    "correct": 810,
+    "n": 951,
+    "training_rows": 3849
+  },
+  "E1_status": {
+    "stage_id": "E1",
+    "status": "complete",
+    "parent_experiment": "v3_feature_regularization_2026-10-29",
+    "cpu_budget_seconds": 590.0,
+    "new_fits": 49,
+    "final_selection_changed": false,
+    "development_evaluated": false,
+    "final_test_accessed": false,
+    "v4_trained": false,
+    "completed_new_fits": 49,
+    "process_cpu_seconds": 10.70976,
+    "wall_seconds": 9.453724124992732,
+    "finalization_only": true,
+    "new_fits_during_finalization": 0,
+    "nested_completed_folds": 9,
+    "internal_gate_passed": true,
+    "finalization_process_cpu_seconds": 1.763827,
+    "finalization_wall_seconds": 0.9137732079834677,
+    "cpu_accounting_note": "Original process diagnostics retained; cumulative CPU is owned by the supervisor ledger."
+  },
+  "E2_development_gate_passed": false,
+  "new_training_performed": false,
+  "original_models_overwritten": false,
+  "release_path": "release/submission_v4",
+  "files": {
+    "model.py": {
+      "sha256": "3b14d776fc52b3d17d1532b2235e0b0b48952e8c137f8cc74e8098e8018307ec",
+      "bytes": 25819
+    },
+    "preprocess.py": {
+      "sha256": "d9f08982cdfbc88c31ea9167dc2b02f3e8f81014872c1344ef8a04268f39eb73",
+      "bytes": 2158
+    },
+    "model.pt": {
+      "sha256": "33aaf1f3a2916e9bf7d977b6a9e1790bf473bb1478495568ce1149edd9fb4066",
+      "bytes": 184225091
+    }
+  },
+  "leaderboard_submitted": false,
+  "new_leaderboard_result": null
+}

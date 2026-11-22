@@ -1,0 +1,26 @@
+{
+  "course_dev": {
+    "corrected_errors": 22,
+    "new_errors": 34,
+    "persistent_errors": 153,
+    "both_correct": 742,
+    "n": 951,
+    "net_correct_gain": -12
+  },
+  "external_dev": {
+    "corrected_errors": 11,
+    "new_errors": 8,
+    "persistent_errors": 173,
+    "both_correct": 114,
+    "n": 306,
+    "net_correct_gain": 3
+  },
+  "paired_dev": {
+    "corrected_errors": 11,
+    "new_errors": 3,
+    "persistent_errors": 77,
+    "both_correct": 109,
+    "n": 200,
+    "net_correct_gain": 8
+  }
+}

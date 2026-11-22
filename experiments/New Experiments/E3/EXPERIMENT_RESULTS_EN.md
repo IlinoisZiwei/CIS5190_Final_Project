@@ -1,0 +1,13 @@
+# Approved experiments: what, why, and results
+
+E0 is foundation work; the six requested experiment IDs are E1–E6. Results are drawn from saved evidence. Training-only OOF, reused development, and leaderboard performance are distinct. No new leaderboard result exists. E4 remains conditional on E1/E2 gates; a failed gate is not a completed training experiment.
+
+| Stage | Status | What was done | Why | Result |
+|---|---|---|---|---|
+| E0 | complete | Audit approved inputs; reproduce original validated V4 | Establish input contracts and a trustworthy fallback | course_dev: 810/951; legacy_dev: 142/306; paired_dev: 115/200; audited training-origin rows=8096 |
+| E1 | complete | Complete the missing nested fold without changing the locked protocol | Estimate the selection procedure using all three complete partitions | Nested 9/9 folds; internal gate=True. course -0.223 pp [-0.810, +0.383]; new +4.000 pp [+2.774, +5.198]; old +0.409 pp [-0.492, +1.334] |
+| E2 | complete | Fit/export locked A and C once, then confirm on three development panels | Measure transfer after internal selection without dev retuning | course_dev: A 776/951, C 764/951; external_dev: A 122/306, C 125/306; paired_dev: A 112/200, C 120/200; development gate=False; fits=2 |
+| E3 | complete | Summarize paired errors, length slices, intervals, and controlled comparisons | Explain where changes occur and quantify conditional uncertainty | course_dev: fixed 22, new errors 34, persistent 153; net -12; external_dev: fixed 11, new errors 8, persistent 173; net +3; paired_dev: fixed 11, new errors 3, persistent 77; net +8 |
+| E4 | not_started_gate_failed | Conditionally migrate the fixed lexical adaptation to V4 | Require internal and development protection gates before spending the conditional budget | The conditionally authorized V4 migration was not started because the frozen E1/E2 prerequisite gates failed: G5_course_accuracy, G5_course_NBC_recall Course 776→764/951; NBC 387→382/475; allowed extra errors/misses 4/4. Model fits=0. |
+| E5 | complete | Freeze the final model and its provenance | Keep validated scoring separate from the full-data submission artifact | Decision=retain_original_v4_submission; fitting rows=4800; new training=False; original models overwritten=False. The 810/951 score belongs to the validated sibling, not the submission fitted on all 4,800 rows. |
+| E6 | complete | Verify deployment interfaces and CPU runtime | Check the course inference contract on approved/synthetic inputs | 1 threads, 3 repeats: 18.28–18.63s wall; 4 threads, 3 repeats: 13.48–13.57s wall; PyTorch 2.9.1; target passed=True. Approved 8,000-row fixture only; server hardware equivalence is unknown. |

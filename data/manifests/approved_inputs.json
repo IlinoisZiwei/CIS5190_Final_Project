@@ -1,0 +1,376 @@
+{
+ "data": {
+  "course_original_train": {
+   "path": "data/approved/course_original_train.csv",
+   "rows": 3849,
+   "role": "original training",
+   "availability": "not distributed"
+  },
+  "course_dev": {
+   "path": "data/approved/course_dev.csv",
+   "rows": 951,
+   "role": "reused development",
+   "availability": "not distributed"
+  },
+  "course_all": {
+   "path": "data/approved/course_all.csv",
+   "rows": 4800,
+   "role": "provided train + development; audit only",
+   "availability": "not distributed"
+  },
+  "course_clean": {
+   "path": "data/approved/course_clean.csv",
+   "rows": 3730,
+   "role": "cleaned training",
+   "availability": "not distributed"
+  },
+  "course_exclusions": {
+   "path": "data/approved/course_exclusions.csv",
+   "rows": 119,
+   "role": "training exclusions",
+   "availability": "not distributed"
+  },
+  "legacy_train": {
+   "path": "data/approved/legacy_train.csv",
+   "rows": 1566,
+   "role": "approved training",
+   "availability": "not distributed"
+  },
+  "legacy_dev": {
+   "path": "data/approved/legacy_dev.csv",
+   "rows": 306,
+   "role": "reused development",
+   "availability": "not distributed"
+  },
+  "training_metadata": {
+   "path": "data/approved/training_metadata.csv",
+   "rows": 5296,
+   "role": "course + legacy TRAINING ONLY",
+   "availability": "not distributed"
+  },
+  "paired_train": {
+   "path": "data/approved/paired_train.csv",
+   "rows": 800,
+   "role": "event-grouped training",
+   "availability": "not distributed"
+  },
+  "paired_dev": {
+   "path": "data/approved/paired_dev.csv",
+   "rows": 200,
+   "role": "event-grouped reused development",
+   "availability": "not distributed"
+  },
+  "new_metadata": {
+   "path": "data/approved/new_metadata.jsonl",
+   "rows": 2000,
+   "role": "selected new training pool; original annotations",
+   "availability": "not distributed"
+  },
+  "audited_training": {
+   "path": "data/approved/audited_training.jsonl",
+   "rows": 8096,
+   "role": "all approved training pools; post-review annotations",
+   "availability": "not distributed"
+  },
+  "official_provenance": {
+   "path": "data/approved/official_provenance.csv",
+   "rows": 3000,
+   "role": "new 2000 + paired 1000 provenance; includes paired development; NOT a fitting pool",
+   "availability": "not distributed"
+  }
+ },
+ "results": {
+  "v1_metrics": {
+   "path": "experiments/historical/v1_metrics.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/baseline/runs/baseline_seed42/metrics.json"
+  },
+  "original_split": {
+   "path": "experiments/historical/original_split.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/baseline/data/split_summary.json"
+  },
+  "v2_selection": {
+   "path": "experiments/historical/v2_selection.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/DragonThree_v2/results/selection.json"
+  },
+  "v3_comparison": {
+   "path": "experiments/historical/v3_comparison.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/DragonThree_v3/results/comparison.json"
+  },
+  "v3_selection": {
+   "path": "experiments/historical/v3_selection.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/DragonThree_v3/results/selection.json"
+  },
+  "v4_manifest": {
+   "path": "experiments/historical/v4_manifest.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/DragonThree_v4/results/validated_manifest.json"
+  },
+  "v4_cpu": {
+   "path": "experiments/historical/v4_cpu.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/DragonThree_v4/results/cpu_benchmark.json"
+  },
+  "v5_selection": {
+   "path": "experiments/historical/v5_selection.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/DragonThree_v5_90pct_attempt/hybrid_selection.json"
+  },
+  "v5_results": {
+   "path": "experiments/historical/v5_results.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/original_project/DragonThree_v5_90pct_attempt/hybrid_results.json"
+  },
+  "collection": {
+   "path": "experiments/historical/collection.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/data_supplement_2026-10-29/collection_summary.json"
+  },
+  "new_audit": {
+   "path": "experiments/historical/new_audit.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/audit_results.json"
+  },
+  "new_results": {
+   "path": "experiments/historical/new_results.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/results.json"
+  },
+  "new_selection": {
+   "path": "experiments/historical/new_selection.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/selection.json"
+  },
+  "new_plan": {
+   "path": "experiments/historical/new_plan.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/preregistered_plan.json"
+  },
+  "new_cpu": {
+   "path": "experiments/historical/new_cpu.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/cpu_summary.json"
+  },
+  "new_folds": {
+   "path": "experiments/historical/new_folds.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/folds.json"
+  },
+  "weight_results": {
+   "path": "experiments/historical/weight_results.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/external_weight_search_2026-10-27/v3_results.json"
+  },
+  "weight_joint": {
+   "path": "experiments/historical/weight_joint.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/external_weight_search_2026-10-27/joint_vocabulary/v3_results.json"
+  },
+  "feda_results": {
+   "path": "experiments/historical/feda_results.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/feda_selection_2026-10-27/results.json"
+  },
+  "style_summary": {
+   "path": "experiments/historical/style_summary.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/masking_styledistance_2026-10-28/summary.json"
+  },
+  "paired_results": {
+   "path": "experiments/historical/paired_results.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/paired_news_v4_2026-10-28/head_results/results.json"
+  },
+  "factor_results": {
+   "path": "experiments/historical/factor_results.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/factor_ablation_v4_2026-10-29/results.json"
+  },
+  "latest_plan": {
+   "path": "experiments/historical/latest_plan.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/v3_feature_regularization_2026-10-29/preregistered_plan.json"
+  },
+  "latest_summary": {
+   "path": "experiments/historical/latest_summary.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/v3_feature_regularization_2026-10-29/summary.json"
+  },
+  "latest_nested": {
+   "path": "experiments/historical/latest_nested.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/v3_feature_regularization_2026-10-29/nested_results.json"
+  },
+  "latest_selection": {
+   "path": "experiments/historical/latest_selection.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/v3_feature_regularization_2026-10-29/final_selection.json"
+  },
+  "latest_cpu": {
+   "path": "experiments/historical/latest_cpu.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/v3_feature_regularization_2026-10-29/cpu_summary.json"
+  },
+  "latest_incomplete": {
+   "path": "experiments/historical/latest_incomplete.json",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/v3_feature_regularization_2026-10-29/incomplete.json"
+  }
+ },
+ "source_archive": [
+  {
+   "original_relative": "quality_pipeline/data/collect_archives.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/data/collect_archives.py",
+   "use": "Historical source preserved in a disabled Notebook code cell",
+   "notebook_source": "quality_pipeline/data/collect_archives.py",
+   "anchor": "source-quality-pipeline-data-collect-archives-py"
+  },
+  {
+   "original_relative": "quality_pipeline/data/collect_ccnews.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/data/collect_ccnews.py",
+   "use": "Historical source preserved in a disabled Notebook code cell",
+   "notebook_source": "quality_pipeline/data/collect_ccnews.py",
+   "anchor": "source-quality-pipeline-data-collect-ccnews-py"
+  },
+  {
+   "original_relative": "quality_pipeline/data/collect_gdelt.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/data/collect_gdelt.py",
+   "use": "Historical source preserved in a disabled Notebook code cell",
+   "notebook_source": "quality_pipeline/data/collect_gdelt.py",
+   "anchor": "source-quality-pipeline-data-collect-gdelt-py"
+  },
+  {
+   "original_relative": "quality_pipeline/data/collect_rss.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/data/collect_rss.py",
+   "use": "Historical source preserved in a disabled Notebook code cell",
+   "notebook_source": "quality_pipeline/data/collect_rss.py",
+   "anchor": "source-quality-pipeline-data-collect-rss-py"
+  },
+  {
+   "original_relative": "quality_pipeline/data/curate.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/data/curate.py",
+   "use": "Historical source preserved in a disabled Notebook code cell",
+   "notebook_source": "quality_pipeline/data/curate.py",
+   "anchor": "source-quality-pipeline-data-curate-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/data_supplement_2026-10-29/assemble.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/data_supplement_2026-10-29/assemble.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/data_supplement_2026-10-29/assemble.py",
+   "anchor": "source-quality-pipeline-experiments-data-supplement-2026-10-29-assemble-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/data_supplement_2026-10-29/collect.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/data_supplement_2026-10-29/collect.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/data_supplement_2026-10-29/collect.py",
+   "anchor": "source-quality-pipeline-experiments-data-supplement-2026-10-29-collect-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/data_supplement_2026-10-29/extra_discover.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/data_supplement_2026-10-29/extra_discover.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/data_supplement_2026-10-29/extra_discover.py",
+   "anchor": "source-quality-pipeline-experiments-data-supplement-2026-10-29-extra-discover-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/external_weight_search_2026-10-27/weight_search.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/external_weight_search_2026-10-27/weight_search.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/external_weight_search_2026-10-27/weight_search.py",
+   "anchor": "source-quality-pipeline-experiments-external-weight-search-2026-10-27-weight-search-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/factor_ablation_v4_2026-10-29/study.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/factor_ablation_v4_2026-10-29/study.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/factor_ablation_v4_2026-10-29/study.py",
+   "anchor": "source-quality-pipeline-experiments-factor-ablation-v4-2026-10-29-study-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/feda_selection_2026-10-27/experiment.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/feda_selection_2026-10-27/experiment.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/feda_selection_2026-10-27/experiment.py",
+   "anchor": "source-quality-pipeline-experiments-feda-selection-2026-10-27-experiment-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/masking_styledistance_2026-10-28/masking.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/masking_styledistance_2026-10-28/masking.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/masking_styledistance_2026-10-28/masking.py",
+   "anchor": "source-quality-pipeline-experiments-masking-styledistance-2026-10-28-masking-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/masking_styledistance_2026-10-28/styledistance.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/masking_styledistance_2026-10-28/styledistance.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/masking_styledistance_2026-10-28/styledistance.py",
+   "anchor": "source-quality-pipeline-experiments-masking-styledistance-2026-10-28-styledistance-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/masking_styledistance_2026-10-28/transfer_v4.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/masking_styledistance_2026-10-28/transfer_v4.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/masking_styledistance_2026-10-28/transfer_v4.py",
+   "anchor": "source-quality-pipeline-experiments-masking-styledistance-2026-10-28-transfer-v4-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/new_data_v3_2026-10-29/prepare.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/prepare.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/new_data_v3_2026-10-29/prepare.py",
+   "anchor": "source-quality-pipeline-experiments-new-data-v3-2026-10-29-prepare-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/new_data_v3_2026-10-29/train.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/new_data_v3_2026-10-29/train.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/new_data_v3_2026-10-29/train.py",
+   "anchor": "source-quality-pipeline-experiments-new-data-v3-2026-10-29-train-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/paired_news_v4_2026-10-28/collect.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/paired_news_v4_2026-10-28/collect.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/paired_news_v4_2026-10-28/collect.py",
+   "anchor": "source-quality-pipeline-experiments-paired-news-v4-2026-10-28-collect-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/paired_news_v4_2026-10-28/curate_pairs.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/paired_news_v4_2026-10-28/curate_pairs.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/paired_news_v4_2026-10-28/curate_pairs.py",
+   "anchor": "source-quality-pipeline-experiments-paired-news-v4-2026-10-28-curate-pairs-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/paired_news_v4_2026-10-28/pair.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/paired_news_v4_2026-10-28/pair.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/paired_news_v4_2026-10-28/pair.py",
+   "anchor": "source-quality-pipeline-experiments-paired-news-v4-2026-10-28-pair-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/paired_news_v4_2026-10-28/support.py",
+   "path": "01_Data_Collection_and_Cleaning.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/paired_news_v4_2026-10-28/support.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/paired_news_v4_2026-10-28/support.py",
+   "anchor": "source-quality-pipeline-experiments-paired-news-v4-2026-10-28-support-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/paired_news_v4_2026-10-28/train_heads.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/paired_news_v4_2026-10-28/train_heads.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/paired_news_v4_2026-10-28/train_heads.py",
+   "anchor": "source-quality-pipeline-experiments-paired-news-v4-2026-10-28-train-heads-py"
+  },
+  {
+   "original_relative": "quality_pipeline/experiments/v3_feature_regularization_2026-10-29/study.py",
+   "path": "02_Historical_Experiments_and_Results.ipynb",
+   "source": "/path/to/CIS5190/handoff/DragonThree_2026-11-03/evidence/quality_pipeline/experiments/v3_feature_regularization_2026-10-29/study.py",
+   "use": "historical source TEXT, not an executable notebook dependency",
+   "notebook_source": "quality_pipeline/experiments/v3_feature_regularization_2026-10-29/study.py",
+   "anchor": "source-quality-pipeline-experiments-v3-feature-regularization-2026-10-29-study-py"
+  }
+ ],
+ "evidence_cutoff": "2026-10-29",
+ "package_date": "2026-11-03"
+}

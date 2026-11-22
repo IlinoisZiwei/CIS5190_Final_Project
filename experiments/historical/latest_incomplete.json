@@ -1,0 +1,15 @@
+{
+  "reason": "Reserve export/report time within 300 CPU seconds",
+  "completed_outer_folds": [
+    "seed5190_outer0",
+    "seed5190_outer1",
+    "seed5190_outer2",
+    "seed5191_outer0",
+    "seed5191_outer1",
+    "seed5191_outer2",
+    "seed5192_outer0",
+    "seed5192_outer1"
+  ],
+  "cpu_seconds": 275.456359,
+  "final_test_accessed": false
+}

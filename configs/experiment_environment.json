@@ -1,0 +1,25 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.9.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "nbconvert": "7.16.6",
+    "ipykernel": "7.1.0",
+    "jupyterlab": "4.5.0"
+  },
+  "training_environment": ".venv",
+  "deployment_environment": ".venv-deploy",
+  "installation_completed": true,
+  "experiment_cpu_included": false,
+  "install_wall_seconds": "not precisely captured; completed within approved 45 minutes",
+  "downloads": "Two dependency installations from PyPI; no pretrained model downloads. Total transfer was not separately metered."
+}

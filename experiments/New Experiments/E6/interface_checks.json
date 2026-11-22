@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "torch": "2.9.1",
+  "n_synthetic_inputs": 8,
+  "row_order_max_score_error": 0.0,
+  "empty_and_digit_only_rows_retained": true,
+  "hostname_not_used_as_feature": true,
+  "network_disabled": true,
+  "all_tensors_cpu": true,
+  "teacher_data_used": false
+}

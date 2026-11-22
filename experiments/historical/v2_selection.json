@@ -1,0 +1,156 @@
+{
+  "selection": "3-fold grouped, stratified cross-validation on training split only",
+  "train_sha256": "038e59245fd71d0da7601ba8e2207f08766f0c81fa2d8961f2f18048217e1e07",
+  "training_rows": 3849,
+  "validation_used_for_selection": false,
+  "ranking": [
+    {
+      "candidate": "word_character_svm_c4",
+      "cv_accuracy": 0.798908807482463,
+      "fold_accuracy": [
+        0.7950116913484022,
+        0.7967161845191556,
+        0.804972804972805
+      ],
+      "spec": {
+        "name": "word_character_svm_c4",
+        "blocks": [
+          "word12",
+          "char"
+        ],
+        "kind": "svm",
+        "C": 4.0
+      }
+    },
+    {
+      "candidate": "word_character_svm_c1",
+      "cv_accuracy": 0.7968303455442972,
+      "fold_accuracy": [
+        0.7950116913484022,
+        0.7943706020328382,
+        0.8010878010878011
+      ],
+      "spec": {
+        "name": "word_character_svm_c1",
+        "blocks": [
+          "word12",
+          "char"
+        ],
+        "kind": "svm",
+        "C": 1.0
+      }
+    },
+    {
+      "candidate": "word_character_logistic",
+      "cv_accuracy": 0.7931930371525071,
+      "fold_accuracy": [
+        0.7895557287607171,
+        0.7935887412040656,
+        0.7964257964257965
+      ],
+      "spec": {
+        "name": "word_character_logistic",
+        "blocks": [
+          "word12",
+          "char"
+        ],
+        "kind": "logistic",
+        "C": 4.0
+      }
+    },
+    {
+      "candidate": "word_bigram_svm_c1",
+      "cv_accuracy": 0.787737074564822,
+      "fold_accuracy": [
+        0.7817614964925955,
+        0.7943706020328382,
+        0.7871017871017871
+      ],
+      "spec": {
+        "name": "word_bigram_svm_c1",
+        "blocks": [
+          "word12"
+        ],
+        "kind": "svm",
+        "C": 1.0
+      }
+    },
+    {
+      "candidate": "word_bigram_svm_c4",
+      "cv_accuracy": 0.7874772668225513,
+      "fold_accuracy": [
+        0.7809820732657833,
+        0.7928068803752932,
+        0.7886557886557887
+      ],
+      "spec": {
+        "name": "word_bigram_svm_c4",
+        "blocks": [
+          "word12"
+        ],
+        "kind": "svm",
+        "C": 4.0
+      }
+    },
+    {
+      "candidate": "nb_word_bigram_logistic",
+      "cv_accuracy": 0.7851389971421149,
+      "fold_accuracy": [
+        0.7786438035853468,
+        0.7928068803752932,
+        0.7839937839937839
+      ],
+      "spec": {
+        "name": "nb_word_bigram_logistic",
+        "blocks": [
+          "word_binary"
+        ],
+        "kind": "nb_logistic",
+        "C": 4.0
+      }
+    },
+    {
+      "candidate": "word_unigram_logistic",
+      "cv_accuracy": 0.7815016887503248,
+      "fold_accuracy": [
+        0.784099766173032,
+        0.7888975762314308,
+        0.7715617715617715
+      ],
+      "spec": {
+        "name": "word_unigram_logistic",
+        "blocks": [
+          "word1"
+        ],
+        "kind": "logistic",
+        "C": 4.0
+      }
+    },
+    {
+      "candidate": "character_svm",
+      "cv_accuracy": 0.779423226812159,
+      "fold_accuracy": [
+        0.7809820732657833,
+        0.781078967943706,
+        0.7762237762237763
+      ],
+      "spec": {
+        "name": "character_svm",
+        "blocks": [
+          "char"
+        ],
+        "kind": "svm",
+        "C": 1.0
+      }
+    }
+  ],
+  "selected_spec": {
+    "name": "word_character_svm_c4",
+    "blocks": [
+      "word12",
+      "char"
+    ],
+    "kind": "svm",
+    "C": 4.0
+  }
+}

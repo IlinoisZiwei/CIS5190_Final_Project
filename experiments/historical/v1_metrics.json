@@ -1,0 +1,42 @@
+{
+  "architecture": "course hashed-word EmbeddingBag(50000,128) + Linear(128,128)/ReLU/Linear(128,2)",
+  "initialization": "random; supplied weights not used",
+  "label_mapping": {
+    "FoxNews": 0,
+    "NBC": 1
+  },
+  "seed": 42,
+  "epochs": 5,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "cpu_threads": 2,
+  "python_version": "3.12.14",
+  "torch_version": "2.9.1",
+  "train_rows": 3849,
+  "validation_rows": 951,
+  "train_csv_sha256": "038e59245fd71d0da7601ba8e2207f08766f0c81fa2d8961f2f18048217e1e07",
+  "val_csv_sha256": "4d12ef27eaa80a7e1c31d35269f95c9721464b2f13fab34e1dcf92eca895b512",
+  "best_epoch": 5,
+  "validation_accuracy": 0.7623554153522608,
+  "majority_class": "NBC",
+  "majority_validation_accuracy": 0.49947423764458465,
+  "training_seconds": 4.545059332995152,
+  "validation_inference_seconds": 0.01055991599423578,
+  "avg_inference_ms": 0.011104012612235311,
+  "confusion_matrix_labels": [
+    "FoxNews",
+    "NBC"
+  ],
+  "confusion_matrix_rows_actual_cols_predicted": [
+    [
+      388,
+      88
+    ],
+    [
+      138,
+      337
+    ]
+  ],
+  "score_scope": "local validation used to select the checkpoint; not leaderboard or final test accuracy"
+}
